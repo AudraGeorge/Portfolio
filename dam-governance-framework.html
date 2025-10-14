@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Asset Governance Framework - Audra George</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-background-warm: #FDF6E3;
+            --color-secondary-background: #F3E9DD;
+            --color-text-dark: #3A3845;
+            --color-dam-accent: #D9A445;
+            --color-km-accent: #5B8291;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--color-background-warm);
+            color: var(--color-text-dark);
+            padding-top: 80px;
+        }
+        h1, h2, h3, h4, h5, h6, .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hr-styled {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(58, 56, 69, 0), rgba(58, 56, 69, 0.5), rgba(58, 56, 69, 0));
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white/95 backdrop-blur-lg fixed w-full z-20 border-b border-gray-200 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 font-poppins tracking-wider">Audra George</a>
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-semibold tracking-wider uppercase">
+                <a href="index.html" class="text-gray-700 hover:text-gray-900 transition">All Projects</a>
+                <a href="dam-portfolio.html" class="text-gray-700 hover:text-gray-900 transition">DAM Portfolio</a>
+                <a href="km-portfolio.html" class="text-gray-700 hover:text-gray-900 transition">KM Portfolio</a>
+                <a href="index.html#contact" class="bg-gray-800 text-white py-2 px-5 rounded-sm hover:bg-black transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 border-t border-gray-200">
+            <a href="dam-portfolio.html" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">DAM Portfolio</a>
+            <a href="km-portfolio.html" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">KM Portfolio</a>
+            <a href="index.html#contact" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="mb-8">
+            <a href="dam-portfolio.html" class="text-gray-600 hover:text-gray-900 transition inline-flex items-center">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to DAM Portfolio
+            </a>
+        </div>
+<article class="prose prose-lg max-w-none">
+<h1 class="text-5xl font-bold font-poppins text-gray-800 mb-8 leading-tight">DAM PORTFOLIO PIECE 2: GOVERNANCE FRAMEWORK</h1>
+
+<hr class="hr-styled my-12">
+
+<h1 class="text-5xl font-bold font-poppins text-gray-800 mb-8 leading-tight">Digital Asset Governance Framework</h1>
+
+<strong class="font-semibold text-gray-900">Deloitte Global Creative Operations</strong>  
+<strong class="font-semibold text-gray-900">Implementation Period: 2018–2022</strong>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Executive Summary</h2>
+
+<p class="my-4 leading-relaxed text-gray-700">This governance framework established standards for managing creative assets—photography, templates, brand materials, video, and marketing collateral—across Deloitte's global creative operations team. As the team expanded internationally to serve 40+ members across multiple regions and time zones, a centralized system with clear governance became critical to maintaining asset quality, ensuring brand consistency, and enabling efficient retrieval.</p>
+
+<p class="my-4 leading-relaxed text-gray-700">The framework increased metadata completeness from 32% to 96%, reduced asset search time by 65%, and eliminated over 7,500 duplicate files, creating a sustainable digital asset ecosystem that scaled globally.</p>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Purpose & Scope</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Purpose</h3>
+<p class="my-4 leading-relaxed text-gray-700">To establish clear standards for uploading, organizing, maintaining, and accessing creative assets stored in Adobe Experience Manager (AEM), ensuring consistency, searchability, and brand compliance across global teams.</p>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Scope</h3>
+<p class="my-4 leading-relaxed text-gray-700">This framework applies to:</p>
+<ul class="list-disc list-inside my-4 space-y-2"><li class="mb-2">Photography (corporate, lifestyle, industry-specific, stock)</li>
+<li class="mb-2">Templates (presentation, design, document)</li>
+<li class="mb-2">Brand assets (logos, style guides, color palettes, typography)</li>
+<li class="mb-2">Marketing materials (campaign assets, collateral, event materials)</li>
+<li class="mb-2">Video assets (brand videos, case studies, stock footage)</li>
+
+<strong class="font-semibold text-gray-900">Out of Scope:</strong> Internal documentation, process SOPs, and training materials (managed separately through knowledge base).
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Roles & Responsibilities</h2>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Role</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Responsibilities</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Operations Specialist</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Framework ownership; asset library organization and maintenance; metadata schema management; quarterly audits; global training</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Regional Asset Champions</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Regional compliance oversight; first-line support for regional teams; flagging regional-specific needs; quarterly audit participation</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Leads</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand compliance review for new assets; approval of templates before publishing; ensuring team follows governance standards</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Members</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Following upload standards when contributing assets; completing metadata requirements; searching library before creating new assets</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Brand Team</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Final approval of brand assets (logos, guidelines); review of templates for brand compliance; updating brand standards</td></tr>
+</tbody></table></div>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Asset Upload Standards</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Required Pre-Upload Checks</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Before uploading any asset to Adobe Experience Manager:</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Duplicate Check</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Search AEM using keywords to verify asset doesn't already exist</p>
+<p class="my-4 leading-relaxed text-gray-700">   - If similar asset exists, evaluate whether new upload is necessary or if existing asset can be reused</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Reduces storage costs and prevents library clutter</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Quality Verification</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Photography: Minimum 300 DPI for print use; RGB color mode for digital</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Templates: Tested and functional; all fonts embedded or outlined; links updated</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Video: Minimum 1080p resolution; appropriate file format (MP4 for web, MOV for editing)</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Brand assets: Vector format where applicable; multiple file formats provided (AI, EPS, PNG)</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Version Validation</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Templates must be marked with version number (v01, v02, etc.)</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Current version clearly identified via metadata "File Status" field</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Older versions moved to Archive folder but retained for reference</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Brand Compliance</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Logos and brand assets reviewed by Brand Team before upload</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Templates checked against current brand guidelines</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Outdated brand materials archived and replaced</p>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">File Naming Conventions</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Standard Format</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">All assets must follow this naming convention:</p>
+
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>[AssetType]_[Category]_[Description]_[Region]_[Version]_[Date].extension
+</code></pre>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Naming Rules</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">No spaces:</strong> Use underscores for readability</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Asset type prefix required:</strong> Photo, Template, Logo, Campaign, Video, etc.</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Description concise but clear:</strong> Max 3-4 words describing content</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Region tag mandatory:</strong> Global, EMEA, APAC, Americas, or specific country code</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Version format:</strong> v## with leading zero (v01, v02, v10)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Date format:</strong> YYYYMMDD (20230415)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Maximum filename length:</strong> 100 characters</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Case sensitivity:</strong> Use consistent capitalization (CamelCase for multi-word descriptions)</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Examples by Asset Type</h3>
+
+<strong class="font-semibold text-gray-900">Photography:</strong>
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>Photo_Lifestyle_TeamMeeting_Global_v01_20230415.jpg
+<p class="my-4 leading-relaxed text-gray-700">Photo_Portrait_CEO_Headshot_Global_v01_20230301.jpg</p>
+<p class="my-4 leading-relaxed text-gray-700">Photo_Industry_FinancialServices_Office_EMEA_v02_20230510.jpg</p>
+</code></pre>
+
+<strong class="font-semibold text-gray-900">Templates:</strong>
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>Template_PPT_ClientPitch_Standard_v04_20230612.pptx
+<p class="my-4 leading-relaxed text-gray-700">Template_InDesign_Brochure_TwoPage_v03_20230520.indd</p>
+<p class="my-4 leading-relaxed text-gray-700">Template_Social_Instagram_Post_v01_20230308.psd</p>
+</code></pre>
+
+<strong class="font-semibold text-gray-900">Brand Assets:</strong>
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>Logo_Primary_Deloitte_Global_v05_20230101.ai
+<p class="my-4 leading-relaxed text-gray-700">BrandGuide_Global_Standards_v04_20230401.pdf</p>
+<p class="my-4 leading-relaxed text-gray-700">ColorPalette_Primary_Global_v02_20230115.pdf</p>
+</code></pre>
+
+<strong class="font-semibold text-gray-900">Marketing Materials:</strong>
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>Campaign_Q2Launch_EmailHero_Global_v01_20230510.jpg
+<p class="my-4 leading-relaxed text-gray-700">Collateral_OnePager_ServicesOverview_APAC_v02_20230420.pdf</p>
+<p class="my-4 leading-relaxed text-gray-700">Event_Conference_BannerAd_Digital_v01_20230305.jpg</p>
+</code></pre>
+
+<strong class="font-semibold text-gray-900">Video:</strong>
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>Video_Brand_CompanyOverview_Global_v02_20230701.mp4
+<p class="my-4 leading-relaxed text-gray-700">Video_CaseStudy_ClientSuccess_FinancialServices_v01_20230815.mp4</p>
+</code></pre>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Version Number Guidelines</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">v01:</strong> Initial version</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">v02, v03, etc.:</strong> Minor updates (content changes, small design tweaks)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">v10, v20, etc.:</strong> Major updates (significant redesign, rebrand, format change)</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Folder Structure & Organization</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Primary Directory Structure</h3>
+
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>📁 Deloitte Creative Asset Library (AEM)/
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 01_Photography/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Corporate_Lifestyle/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Industry_Specific/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Stock_Photography/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 02_Templates/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Presentation_Templates/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Design_Templates/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Document_Templates/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 03_Brand_Assets/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Logos/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Brand_Guidelines/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Color_Palettes/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Typography_Assets/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 04_Marketing_Materials/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Campaign_Assets/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Collateral/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Event_Materials/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 05_Video_Assets/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Brand_Videos/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Case_Study_Videos/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Stock_Video/</p>
+<p class="my-4 leading-relaxed text-gray-700">└── 📁 99_Archive/</p>
+<p class="my-4 leading-relaxed text-gray-700">    ├── [Year]/</p>
+<p class="my-4 leading-relaxed text-gray-700">    └── Deprecated_Templates/</p>
+</code></pre>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Folder Organization Rules</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Assets placed in only one location:</strong> No cross-posting to multiple folders</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Campaign assets nested by campaign name</strong> within Marketing_Materials folder</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Regional variations nested within asset type</strong> (not separate regional folders at top level)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Archive folder for retired assets:</strong> Maintains clean active directories</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Maximum folder depth: 3 levels</strong> to prevent deep nesting and "click fatigue"</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Metadata Schema & Requirements</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Required Metadata Fields</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">All assets must have the following metadata completed before upload:</p>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Field</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Type</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Purpose</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Examples</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Asset Type</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dropdown</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Primary classification</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Photography, Template, Logo, Brand Asset, Video</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Category</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dropdown</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Secondary classification</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Lifestyle, Portrait, Corporate, Industry</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Description</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Text (50 char max)</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Concise asset description</td><td class="border-b border-gray-200 px-6 py-3 text-sm">"Team collaboration in modern office"</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Region/Market</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Multi-select</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Geographic applicability</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Global, EMEA, APAC, Americas, [Country]</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">File Status</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dropdown</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Version status</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Current, Archive, Draft</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Usage Rights</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dropdown</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Licensing status</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Full Rights, Stock License, Limited Use, Internal Only</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Keywords</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Tags (min 3)</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Search terms</td><td class="border-b border-gray-200 px-6 py-3 text-sm">office, collaboration, team, professional, modern</td></tr>
+</tbody></table></div>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Optional Metadata Fields</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Strongly encouraged for improved searchability:</p>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Field</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Type</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Purpose</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Examples</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Campaign/Project</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dropdown</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Associated initiative</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Q2 Launch, Annual Report 2023, [Client Name]</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Industry</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Multi-select</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Industry focus</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Financial Services, Technology, Healthcare, Government</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creator/Photographer</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Text</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Attribution</td><td class="border-b border-gray-200 px-6 py-3 text-sm">[Name or Agency]</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Orientation</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dropdown</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Layout orientation</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Horizontal, Vertical, Square</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Color Palette</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Tags</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Dominant colors</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Blue, Green, Neutral, Warm Tones</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Model Release</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Checkbox</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Legal release status</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Yes/No</td></tr>
+</tbody></table></div>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Metadata Enforcement</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Required fields enforced via AEM workflow:</strong> Cannot complete upload without populating mandatory metadata</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Dropdown menus prevent inconsistencies:</strong> Standardized values eliminate free-text variations</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Multi-select fields enable faceted search:</strong> Users can filter by multiple criteria simultaneously</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Metadata templates for bulk uploads:</strong> Expedite large-scale migrations while maintaining standards</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Asset Lifecycle Management</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">1. Asset Creation & Upload</h3>
+
+<strong class="font-semibold text-gray-900">Workflow:</strong>
+<li class="mb-2">Asset finalized and approved by creative lead</li>
+<li class="mb-2">Uploader completes pre-upload checklist (duplicate check, quality verification, brand compliance)</li>
+<li class="mb-2">File named according to convention</li>
+<li class="mb-2">Asset uploaded to appropriate AEM folder</li>
+<li class="mb-2">All required metadata fields completed</li>
+<li class="mb-2">Upload submitted; AEM workflow validates compliance</li>
+
+<strong class="font-semibold text-gray-900">Timeline:</strong> Standard assets available in AEM within 24 hours of approval
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">2. Review & Approval Process</h3>
+
+<strong class="font-semibold text-gray-900">Brand Assets (Logos, Guidelines):</strong>
+<li class="mb-2">Uploaded to draft folder</li>
+<li class="mb-2">Routed to Brand Team for approval via AEM workflow</li>
+<li class="mb-2">Approved assets moved to live folder and marked "Current"</li>
+<li class="mb-2">Unapproved assets flagged for revision</li>
+
+<strong class="font-semibold text-gray-900">Templates (Presentation, Design, Document):</strong>
+<li class="mb-2">Creative lead reviews for brand compliance</li>
+<li class="mb-2">Tested for functionality (fonts, links, layout)</li>
+<li class="mb-2">Approved templates added to "Current Templates" collection</li>
+<li class="mb-2">Previous version moved to Archive if replaced</li>
+
+<strong class="font-semibold text-gray-900">Photography & Marketing Materials:</strong>
+<li class="mb-2">Creative lead spot-checks for quality and metadata completeness</li>
+<li class="mb-2">No formal approval required for photography unless brand-sensitive</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">3. Maintenance & Update Cycles</h3>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Asset Type</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Review Frequency</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Trigger for Ad-Hoc Update</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Photography</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Annual archive review</td><td class="border-b border-gray-200 px-6 py-3 text-sm">New brand guidelines; outdated content</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Templates</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Semi-annual</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Rebrand; software version updates; legal changes</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand Assets</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Quarterly</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand refresh; new logo variations; legal updates</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Marketing Materials</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Quarterly</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Campaign completion; outdated collateral</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Video Assets</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Annual</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Rebrand; outdated messaging</td></tr>
+</tbody></table></div>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">4. Archiving Protocol</h3>
+
+<strong class="font-semibold text-gray-900">When to Archive:</strong>
+<li class="mb-2">Asset replaced by newer version (templates, brand guidelines)</li>
+<li class="mb-2">Campaign concluded and materials no longer in active use (marketing materials)</li>
+<li class="mb-2">Outdated brand standards superseded by rebrand (logos, guidelines)</li>
+<li class="mb-2">Asset unused for 18+ months (photography, video)</li>
+
+<strong class="font-semibold text-gray-900">Archive Process:</strong>
+<li class="mb-2">Update metadata "File Status" to "Archive"</li>
+<li class="mb-2">Move to 99_Archive folder with appropriate year/quarter subfolder</li>
+<li class="mb-2">Retain for 2 years before permanent deletion (legal/historical reference)</li>
+<li class="mb-2">Update any collections or links to remove archived assets</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Quality Assurance</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Pre-Publication Checklist</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Before publishing any asset to Adobe Experience Manager, verify:</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">File Quality</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Resolution meets standards (300 DPI for print, 1080p for video)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Color mode correct (RGB for digital, CMYK for print)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] File format appropriate for intended use</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">Naming Convention</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Follows standard format: <code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">[AssetType]_[Category]_[Description]_[Region]_[Version]_[Date].ext</code></p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] No spaces (underscores used)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Version number included</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Date in YYYYMMDD format</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">Folder Location</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Saved in correct folder based on asset type and category</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Not duplicated across multiple folders</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">Metadata</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] All required fields completed (Asset Type, Region, File Status, Usage Rights, Keywords)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Description concise and accurate</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Minimum 3 keywords tagged</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">Version Control</strong> (Templates only)</li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Version number updated from previous version</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] If "Current," marked as such in File Status</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Previous version moved to Archive if replaced</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">Duplicate Check</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Searched AEM to confirm asset doesn't already exist</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] If similar asset found, evaluated whether new upload necessary</p>
+
+<li class="mb-2">[ ] <strong class="font-semibold text-gray-900">Brand Compliance</strong> (Brand Assets & Templates)</li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Reviewed against current brand guidelines</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Approval obtained from Brand Team or creative lead</p>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Quarterly Audit Process</h3>
+
+<strong class="font-semibold text-gray-900">Conducted by:</strong> Creative Operations Specialist + Regional Asset Champions  
+<strong class="font-semibold text-gray-900">Frequency:</strong> Every 3 months (Q1, Q2, Q3, Q4)  
+<strong class="font-semibold text-gray-900">Scope:</strong> All active assets in AEM
+
+<strong class="font-semibold text-gray-900">Audit Checklist:</strong>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Metadata Completeness</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Review random sample of 500 assets</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Check required fields populated</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Flag assets with missing metadata for correction</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Folder Structure Adherence</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Verify assets in correct folders</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Identify misplaced assets and correct</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Duplicate Detection</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Run hash comparison to identify exact duplicates</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Visual review of near-duplicates</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Consolidate duplicates (keep highest quality, archive or delete lower quality)</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Version Control</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Review "Current Templates" collection for accuracy</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Ensure outdated template versions moved to Archive</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Verify version numbers incremented correctly</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Archiving Review</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Identify assets unused for 18+ months (photography, video)</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Identify concluded campaigns with active marketing materials</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Move candidates to Archive folder</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">User Feedback</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Solicit team input on asset organization and searchability</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Identify gaps or confusing areas</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Adjust metadata dropdowns or folder structure if needed</p>
+
+<strong class="font-semibold text-gray-900">Audit Documentation:</strong>
+<li class="mb-2">Findings logged in Audit Report (Excel)</li>
+<li class="mb-2">Action items assigned to responsible parties</li>
+<li class="mb-2">Follow-up review 30 days post-audit to verify corrections</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Access Controls & Permissions</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Permission Levels</h3>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">User Group</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Access Level</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Permissions</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Global Creative Team</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">View/Download</td><td class="border-b border-gray-200 px-6 py-3 text-sm">View and download all assets; cannot upload or edit metadata</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Members (Contributors)</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Upload/Edit</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Upload new assets; edit metadata on own uploads; download all assets</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Leads</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Review/Approve</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Approve templates and brand assets; edit metadata on all assets; archive outdated materials</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Operations Specialist</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Full Control</td><td class="border-b border-gray-200 px-6 py-3 text-sm">All permissions; folder structure management; metadata schema updates; user permission management</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Brand Team</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Review/Approve (Brand Assets)</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Approve logos, guidelines, and brand-related templates; edit brand asset metadata</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Regional Asset Champions</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Upload/Edit (Regional Scope)</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Upload and edit assets for their region; support regional teams; participate in audits</td></tr>
+</tbody></table></div>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Access Management</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">New team members:</strong> Granted "View/Download" access upon onboarding; upgraded to "Upload/Edit" after completing DAM training</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Departing team members:</strong> Access revoked within 24 hours of departure</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">External vendors/freelancers:</strong> Temporary "View/Download" access for specific folders; revoked upon project completion</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Permissions reviewed quarterly:</strong> Adjusted based on role changes or team restructuring</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Training & Support</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Onboarding Training</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">All new creative team members complete DAM training within first 2 weeks:</p>
+
+<strong class="font-semibold text-gray-900">Training Components:</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Video tutorial:</strong> "Navigating the AEM Asset Library" (15 minutes)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Quick reference guide:</strong> File naming conventions and metadata requirements (1-page PDF)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Hands-on practice:</strong> Upload 2-3 sample assets with guidance</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Q&A session:</strong> 30-minute live session with Creative Operations Specialist or Regional Asset Champion</li>
+
+<strong class="font-semibold text-gray-900">Training Resources:</strong>
+<li class="mb-2">AEM Asset Upload Checklist (laminated card for desk reference)</li>
+<li class="mb-2">Metadata Field Definitions Guide</li>
+<li class="mb-2">"Common Mistakes & How to Avoid Them" document</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Ongoing Support</h3>
+
+<strong class="font-semibold text-gray-900">First-Line Support:</strong>
+<li class="mb-2">Regional Asset Champions field questions from team members in their region</li>
+<li class="mb-2">Slack channel: #creative-asset-library for quick questions</li>
+
+<strong class="font-semibold text-gray-900">Escalation:</strong>
+<li class="mb-2">Complex issues or system-level questions escalated to Creative Operations Specialist</li>
+<li class="mb-2">Brand compliance questions routed to Brand Team</li>
+
+<strong class="font-semibold text-gray-900">Refresher Training:</strong>
+<li class="mb-2">Annual refresher webinar for all team members (optional but encouraged)</li>
+<li class="mb-2">Mandatory refresher if audit reveals repeated non-compliance</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Maintenance Schedule</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Weekly Tasks</h3>
+<li class="mb-2">Monitor new asset uploads for quality and compliance</li>
+<li class="mb-2">Address urgent metadata corrections flagged by team</li>
+<li class="mb-2">Respond to support questions in #creative-asset-library Slack channel</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Monthly Tasks</h3>
+<li class="mb-2">Review "Current Templates" collection for accuracy</li>
+<li class="mb-2">Update metadata dropdown values if new categories needed</li>
+<li class="mb-2">Analyze asset download metrics to identify most-used assets</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Quarterly Tasks</h3>
+<li class="mb-2">Conduct comprehensive asset library audit</li>
+<li class="mb-2">Review and update folder structure as needed (rare)</li>
+<li class="mb-2">Solicit team feedback via survey</li>
+<li class="mb-2">Update training materials if governance changes made</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Annual Tasks</h3>
+<li class="mb-2">Comprehensive governance framework review</li>
+<li class="mb-2">Assess metadata schema for gaps or needed additions</li>
+<li class="mb-2">Archive photography and video assets unused for 18+ months</li>
+<li class="mb-2">Review access permissions and adjust as needed</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Appendix A: Common Metadata Mistakes & How to Fix Them</h2>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Mistake</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Impact</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Correct Approach</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Using free-text for Asset Type instead of dropdown</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Inconsistent categorization; poor search results</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Always select from dropdown; request new category if needed</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Skipping keywords</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Asset unsearchable via keyword search</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Add minimum 3 relevant keywords; think about how others will search</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Vague descriptions</strong> ("photo," "image")</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Difficult to identify asset without opening</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Be specific: "Team collaboration in modern office setting"</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Not marking region</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Global team can't filter by market</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Always tag region: Global, EMEA, APAC, Americas, or specific country</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Forgetting to update "File Status" when archiving</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Outdated assets appear in current results</td><td class="border-b border-gray-200 px-6 py-3 text-sm">When moving to Archive folder, update File Status to "Archive"</td></tr>
+</tbody></table></div>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Appendix B: Governance Framework Outcomes</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Key Metrics (2018–2022)</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Metadata Completeness:</strong> Increased from 32% to 96%</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Asset Search Time:</strong> Reduced by 65% (from 12-15 minutes to 4-5 minutes average)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Duplicate Files Eliminated:</strong> 7,500+ duplicates consolidated, freeing 40GB storage</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Template Version Clarity:</strong> 100% of current templates clearly identified via "Current Templates" collection</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">User Satisfaction:</strong> 94% of team rated AEM system as "significantly better" post-implementation</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Quarterly Audit Compliance:</strong> 98% of assets met governance standards</li>
+</ul>
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Supporting Global Creative Operations</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">This governance framework enabled a creative operations team to scale from regional (U.S./Canada) to global operations across multiple time zones while maintaining asset quality, brand consistency, and efficient retrieval. By establishing clear upload standards, metadata requirements, and maintenance protocols, the team created a sustainable digital asset ecosystem that continues to support global creative production.</p>
+
+<hr class="hr-styled my-12">
+
+<strong class="font-semibold text-gray-900">Document Owner:</strong> Creative Operations Specialist  
+<strong class="font-semibold text-gray-900">Last Updated:</strong> August 2022  
+<strong class="font-semibold text-gray-900">Next Review:</strong> N/A (Framework archived following role transition)
+
+</article>
+    </main>
+    <footer class="bg-gray-800 text-white py-6 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">© 2025 Audra George</p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {{
+            mobileMenuButton.addEventListener('click', () => {{
+                mobileMenu.classList.toggle('hidden');
+            }});
+        }}
+    </script>
+</body>
+</html>

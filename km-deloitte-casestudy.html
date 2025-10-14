@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deloitte Knowledge Infrastructure - Audra George</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-background-warm: #FDF6E3;
+            --color-secondary-background: #F3E9DD;
+            --color-text-dark: #3A3845;
+            --color-dam-accent: #D9A445;
+            --color-km-accent: #5B8291;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--color-background-warm);
+            color: var(--color-text-dark);
+            padding-top: 80px;
+        }
+        h1, h2, h3, h4, h5, h6, .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hr-styled {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(58, 56, 69, 0), rgba(58, 56, 69, 0.5), rgba(58, 56, 69, 0));
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white/95 backdrop-blur-lg fixed w-full z-20 border-b border-gray-200 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 font-poppins tracking-wider">Audra George</a>
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-semibold tracking-wider uppercase">
+                <a href="index.html" class="text-gray-700 hover:text-gray-900 transition">All Projects</a>
+                <a href="dam-portfolio.html" class="text-gray-700 hover:text-gray-900 transition">DAM Portfolio</a>
+                <a href="km-portfolio.html" class="text-gray-700 hover:text-gray-900 transition">KM Portfolio</a>
+                <a href="index.html#contact" class="bg-gray-800 text-white py-2 px-5 rounded-sm hover:bg-black transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 border-t border-gray-200">
+            <a href="dam-portfolio.html" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">DAM Portfolio</a>
+            <a href="km-portfolio.html" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">KM Portfolio</a>
+            <a href="index.html#contact" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="mb-8">
+            <a href="km-portfolio.html" class="text-gray-600 hover:text-gray-900 transition inline-flex items-center">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to KM Portfolio
+            </a>
+        </div>
+<article class="prose prose-lg max-w-none">
+<h1 class="text-5xl font-bold font-poppins text-gray-800 mb-8 leading-tight">PORTFOLIO PIECE 2: DELOITTE CASE STUDY</h1>
+
+<hr class="hr-styled my-12">
+
+<h1 class="text-5xl font-bold font-poppins text-gray-800 mb-8 leading-tight">Documentation & Knowledge Infrastructure for Global Creative Operations</h1>
+
+<strong class="font-semibold text-gray-900">Client:</strong> Deloitte (Global Consulting Firm)  
+<strong class="font-semibold text-gray-900">Role:</strong> Creative Operations Specialist  
+<strong class="font-semibold text-gray-900">Timeline:</strong> 2018 – August 2022  
+<strong class="font-semibold text-gray-900">Tools:</strong> Microsoft SharePoint, Google Drive, Adobe Workfront, Confluence
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">PROJECT OVERVIEW</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Background</h3>
+<p class="my-4 leading-relaxed text-gray-700">Deloitte's creative operations team produces marketing collateral, presentations, brand materials, and campaign assets for a global consulting practice. Initially supporting U.S. and Canada operations with approximately 20 team members, the department expanded to serve international markets across EMEA, APAC, and Latin America, growing to 40+ members spanning multiple time zones.</p>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Challenge</h3>
+<p class="my-4 leading-relaxed text-gray-700">As the team scaled globally, operational knowledge remained largely undocumented and concentrated in the heads of a few long-tenured team members. New hires faced steep learning curves, cross-time-zone collaboration suffered from information gaps, and inconsistent processes created inefficiencies.</p>
+
+<strong class="font-semibold text-gray-900">Key Pain Points:</strong>
+<ul class="list-disc list-inside my-4 space-y-2"><li class="mb-2"><strong class="font-semibold text-gray-900">80% of operational knowledge existed only verbally</strong> (not written down anywhere)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">No centralized documentation repository</strong> (information scattered across emails, Slack threads, individual hard drives)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">New team members took 6-8 weeks to onboard</strong> due to lack of structured training materials</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Heavy reliance on synchronous communication</strong> (constant Slack messages asking "how do I...?" or "where is...?")</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Process inconsistencies across regions</strong> (U.S. team operated differently than EMEA team)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Knowledge loss risk</strong> when team members left (no documentation of their workflows)</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Objective</h3>
+<p class="my-4 leading-relaxed text-gray-700">Build a documentation and knowledge-sharing infrastructure that would:</p>
+<li class="mb-2">Capture institutional knowledge in accessible, searchable formats</li>
+<li class="mb-2">Enable asynchronous collaboration across time zones</li>
+<li class="mb-2">Reduce onboarding time for new team members</li>
+<li class="mb-2">Standardize processes globally while accommodating regional variations</li>
+<li class="mb-2">Create self-service systems to reduce dependency on asking colleagues for information</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">ASSESSMENT & DISCOVERY</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Discovery Process</h3>
+
+<strong class="font-semibold text-gray-900">Phase 1: Knowledge Audit (Weeks 1-4)</strong>
+<p class="my-4 leading-relaxed text-gray-700">Conducted interviews and observation to map existing operational knowledge:</p>
+
+<strong class="font-semibold text-gray-900">Interviews with 15 team members across roles:</strong>
+<li class="mb-2">What processes do you perform regularly?</li>
+<li class="mb-2">Where do you go when you need information?</li>
+<li class="mb-2">What do new team members struggle to learn?</li>
+<li class="mb-2">What questions do you get asked repeatedly?</li>
+
+<strong class="font-semibold text-gray-900">Shadow sessions with 6 team members:</strong>
+<li class="mb-2">Observed daily workflows to identify undocumented steps</li>
+<li class="mb-2">Noted where team members hit roadblocks or needed to ask for help</li>
+<li class="mb-2">Cataloged tools, templates, and resources in use</li>
+
+<strong class="font-semibold text-gray-900">Survey of all 40+ team members:</strong>
+<li class="mb-2">Rated confidence in finding information independently (1-10 scale)</li>
+<li class="mb-2">Identified top 10 most confusing or unclear processes</li>
+<li class="mb-2">Suggested topics for documentation</li>
+
+<strong class="font-semibold text-gray-900">Phase 2: Gap Analysis (Week 5)</strong>
+<p class="my-4 leading-relaxed text-gray-700">Analyzed findings to identify highest-impact documentation needs:</p>
+
+<strong class="font-semibold text-gray-900">Critical Gaps Identified:</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Project Intake & Workflow</strong> (mentioned by 87% of respondents)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Adobe Experience Manager (AEM) asset management</strong> (mentioned by 73%)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Legal and brand review processes</strong> (mentioned by 68%)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Vendor onboarding and management</strong> (mentioned by 54%)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Regional-specific requirements</strong> (mentioned by 61% of international team)</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Key Findings</h3>
+
+<strong class="font-semibold text-gray-900">1. Institutional Knowledge Trapped in People</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Finding:</strong> 80% of operational processes existed only as verbal knowledge</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Examples:</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - "Ask Sarah about legal review routing"</p>
+<p class="my-4 leading-relaxed text-gray-700">  - "John knows how to expedite vendor payments"</p>
+<p class="my-4 leading-relaxed text-gray-700">  - "The EMEA team has a different intake form but I don't know where it is"</p>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Impact:</strong> Bottlenecks when key people unavailable; knowledge lost when employees departed</li>
+
+<strong class="font-semibold text-gray-900">2. No Single Source of Truth</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Finding:</strong> Information scattered across 7+ platforms with no central hub</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Locations of "documentation" (such as it was):</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - Slack threads (unsearchable after 90 days on free plan)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Individual email inboxes</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Personal Google Drive folders (access lost when person left)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Random Word docs on network drives (no version control)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Sticky notes and handwritten notes</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Tribal knowledge ("everyone just knows this")</p>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Impact:</strong> Wasted time hunting for information; conflicting instructions; duplicated effort</li>
+
+<strong class="font-semibold text-gray-900">3. Onboarding Was Trial by Fire</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Finding:</strong> New team members took 6-8 weeks to become productive</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Onboarding "process":</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">  - Week 1: IT setup, vague intro to tools</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Weeks 2-6: Shadow teammates, ask lots of questions, piece together workflows</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Weeks 6-8: Still asking basic questions; frustration on both sides</p>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Impact:</strong> Slow ramp-up; high burden on existing team to answer repetitive questions; inconsistent training quality</li>
+
+<strong class="font-semibold text-gray-900">4. Time Zone Challenges</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Finding:</strong> Asynchronous work nearly impossible due to lack of documentation</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Scenario:</strong> APAC team member needs to complete a task but:</li>
+<p class="my-4 leading-relaxed text-gray-700">  - Process not documented</p>
+<p class="my-4 leading-relaxed text-gray-700">  - U.S. team (who knows the process) is asleep</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Work blocked for 12+ hours waiting for response</p>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Impact:</strong> Delays, missed deadlines, frustration across global team</li>
+
+<strong class="font-semibold text-gray-900">5. Process Drift Across Regions</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Finding:</strong> Teams in different regions developed their own workflows with no standardization</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Example:</strong> Project intake process varied by region:</li>
+<p class="my-4 leading-relaxed text-gray-700">  - U.S.: Submitted via Workfront</p>
+<p class="my-4 leading-relaxed text-gray-700">  - EMEA: Submitted via email to team lead</p>
+<p class="my-4 leading-relaxed text-gray-700">  - APAC: Submitted via Google Form</p>
+<p class="my-4 leading-relaxed text-gray-700">  - No central tracking; projects fell through cracks</p>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Impact:</strong> Inconsistent service quality; leadership lacked visibility into global workload</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">SOLUTION DESIGN</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Centralized Knowledge Repository</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Created a structured documentation hub in SharePoint (chosen for integration with Microsoft ecosystem and global accessibility).</p>
+
+<h4 class="text-xl font-semibold font-poppins text-gray-700 mt-8 mb-3"><strong class="font-semibold text-gray-900">Repository Structure:</strong></h4>
+
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>📁 Creative Operations Knowledge Base/
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 01_SOPs & Process Documentation/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Intake & Project Management</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Asset Management & DAM</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Legal & Brand Compliance</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Vendor & Procurement</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Regional-Specific Processes</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 02_Training & Onboarding/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── New Team Member Onboarding</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Tool Training (AEM, Workfront, etc.)</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Process Training</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 03_Templates & Forms/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Project Intake Templates</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Asset Request Forms</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Reporting Templates</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 04_Brand & Style Guidelines/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Global Brand Standards</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── Regional Brand Variations</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── Legal & Compliance Guidelines</p>
+<p class="my-4 leading-relaxed text-gray-700">└── 📁 05_Tool Documentation/</p>
+<p class="my-4 leading-relaxed text-gray-700">    ├── Adobe Experience Manager</p>
+<p class="my-4 leading-relaxed text-gray-700">    ├── Adobe Workfront</p>
+<p class="my-4 leading-relaxed text-gray-700">    └── Microsoft SharePoint</p>
+</code></pre>
+
+<strong class="font-semibold text-gray-900">Design Principles:</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Function-based organization:</strong> Organized by what users need to accomplish, not by team or role</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Shallow hierarchy:</strong> Maximum 3 levels deep to prevent "click fatigue"</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Predictable structure:</strong> Similar subfolders across categories for easy navigation</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Scalable:</strong> Accommodates new regions and tools without restructuring</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Comprehensive SOP Development</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Created 50+ standard operating procedures covering critical workflows.</p>
+
+<h4 class="text-xl font-semibold font-poppins text-gray-700 mt-8 mb-3"><strong class="font-semibold text-gray-900">SOP Template Format:</strong></h4>
+
+<p class="my-4 leading-relaxed text-gray-700">Every SOP followed a consistent structure:</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Purpose & Scope</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - What this process accomplishes</p>
+<p class="my-4 leading-relaxed text-gray-700">   - When to use this SOP</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Who is responsible</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Prerequisites</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Required tools/access</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Prior steps that must be completed</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Step-by-Step Instructions</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Numbered steps with screenshots</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Decision points clearly marked</p>
+<p class="my-4 leading-relaxed text-gray-700">   - "If/Then" scenarios addressed</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Troubleshooting</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Common issues and solutions</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Escalation path if problems persist</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Related Documentation</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Links to related SOPs</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Relevant templates or forms</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Contacts & Support</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Who to ask for help</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Slack channel for questions</p>
+
+<strong class="font-semibold text-gray-900">Example SOPs Created:</strong>
+<li class="mb-2">Project Intake Workflow (U.S., EMEA, APAC regional variations)</li>
+<li class="mb-2">Legal Review Routing Process</li>
+<li class="mb-2">AEM Asset Upload Standards</li>
+<li class="mb-2">Vendor Onboarding Process</li>
+<li class="mb-2">Brand Approval Workflow</li>
+<li class="mb-2">Timeline Estimation Guidelines</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Template Library</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Built a centralized library of 30+ templates and forms to standardize workflows.</p>
+
+<strong class="font-semibold text-gray-900">Templates Included:</strong>
+<li class="mb-2">Project Request Forms (intake)</li>
+<li class="mb-2">Asset Request Forms</li>
+<li class="mb-2">Creative Briefs</li>
+<li class="mb-2">Legal Review Checklists</li>
+<li class="mb-2">Vendor Onboarding Packets</li>
+<li class="mb-2">Weekly Status Report Templates</li>
+<li class="mb-2">Project Retrospective Templates</li>
+
+<strong class="font-semibold text-gray-900">Template Features:</strong>
+<li class="mb-2">Pre-filled sections with instructions</li>
+<li class="mb-2">Required fields clearly marked</li>
+<li class="mb-2">Dropdown menus to prevent inconsistent entries</li>
+<li class="mb-2">Built-in version control (filename convention)</li>
+
+<strong class="font-semibold text-gray-900">Benefits:</strong>
+<li class="mb-2">Reduced time spent creating documents from scratch</li>
+<li class="mb-2">Ensured all necessary information captured</li>
+<li class="mb-2">Made it easier to track and compare projects over time</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Onboarding Curriculum</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Developed structured 4-week onboarding program for new team members.</p>
+
+<h4 class="text-xl font-semibold font-poppins text-gray-700 mt-8 mb-3"><strong class="font-semibold text-gray-900">Onboarding Structure:</strong></h4>
+
+<strong class="font-semibold text-gray-900">Week 1: Orientation & Access</strong>
+<li class="mb-2">IT setup and tool access</li>
+<li class="mb-2">Introduction to knowledge base navigation</li>
+<li class="mb-2">Review of team structure and roles</li>
+<li class="mb-2">Assign onboarding buddy</li>
+
+<strong class="font-semibold text-gray-900">Week 2: Core Processes</strong>
+<li class="mb-2">Training on project intake workflow</li>
+<li class="mb-2">Asset management and DAM basics</li>
+<li class="mb-2">Introduction to legal and brand review processes</li>
+<li class="mb-2">Shadow experienced team member on 2-3 projects</li>
+
+<strong class="font-semibold text-gray-900">Week 3: Tool Training</strong>
+<li class="mb-2">Adobe Experience Manager (AEM) hands-on training</li>
+<li class="mb-2">Adobe Workfront project management training</li>
+<li class="mb-2">SharePoint and knowledge base deep dive</li>
+<li class="mb-2">Practice projects with feedback</li>
+
+<strong class="font-semibold text-gray-900">Week 4: Independent Work with Support</strong>
+<li class="mb-2">Manage 2-3 small projects independently</li>
+<li class="mb-2">Weekly check-ins with manager</li>
+<li class="mb-2">Access to onboarding buddy for questions</li>
+<li class="mb-2">End-of-month readiness assessment</li>
+
+<strong class="font-semibold text-gray-900">Onboarding Materials Created:</strong>
+<li class="mb-2">Week-by-week checklists</li>
+<li class="mb-2">Training videos (screen recordings with voiceover)</li>
+<li class="mb-2">Quick reference guides for each tool</li>
+<li class="mb-2">Self-assessment quizzes</li>
+<li class="mb-2">Onboarding completion survey</li>
+
+<strong class="font-semibold text-gray-900">Results:</strong>
+<li class="mb-2">Onboarding time reduced from 6-8 weeks to 3-4 weeks</li>
+<li class="mb-2">New team members reported 85% confidence in core processes by end of Week 4</li>
+<li class="mb-2">Reduced burden on existing team (fewer repetitive questions)</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Governance Framework</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Established standards for creating, maintaining, and accessing documentation.</p>
+
+<strong class="font-semibold text-gray-900">Key Governance Elements:</strong>
+
+<strong class="font-semibold text-gray-900">1. Documentation Standards</strong>
+<li class="mb-2">All SOPs must include: purpose, prerequisites, step-by-step instructions, troubleshooting, contacts</li>
+<li class="mb-2">Consistent formatting and structure</li>
+<li class="mb-2">Required screenshots and visual aids</li>
+<li class="mb-2">Version control via file naming</li>
+
+<strong class="font-semibold text-gray-900">2. Review & Update Cycles</strong>
+<li class="mb-2">SOPs reviewed quarterly</li>
+<li class="mb-2">Training materials reviewed semi-annually</li>
+<li class="mb-2">Templates reviewed annually</li>
+<li class="mb-2">Ad-hoc updates triggered by process changes or tool updates</li>
+
+<strong class="font-semibold text-gray-900">3. Ownership & Accountability</strong>
+<li class="mb-2">Creative Operations Specialist: Overall framework ownership</li>
+<li class="mb-2">Team Leads: Subject matter expertise for their functional areas</li>
+<li class="mb-2">All team members: Flagging outdated or unclear documentation</li>
+
+<strong class="font-semibold text-gray-900">4. Quality Assurance</strong>
+<li class="mb-2">Pre-publication checklist for all new documentation</li>
+<li class="mb-2">Peer review required before publishing SOPs</li>
+<li class="mb-2">Quarterly audit of documentation completeness</li>
+
+<strong class="font-semibold text-gray-900">5. Access Controls</strong>
+<li class="mb-2">All team: Read access to SOPs and training materials</li>
+<li class="mb-2">Team leads: Edit access to documentation in their functional area</li>
+<li class="mb-2">Creative Ops Specialist: Full control across all documentation</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">IMPLEMENTATION & OUTCOMES</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Implementation Approach</h3>
+
+<strong class="font-semibold text-gray-900">Phase 1: Pilot Documentation (Weeks 6-10)</strong>
+<li class="mb-2">Created 10 highest-priority SOPs based on discovery findings</li>
+<li class="mb-2">Built onboarding curriculum and templates</li>
+<li class="mb-2">Tested with small group (5 team members) for feedback</li>
+<li class="mb-2">Refined based on usability testing</li>
+
+<strong class="font-semibold text-gray-900">Phase 2: Knowledge Base Rollout (Weeks 11-14)</strong>
+<li class="mb-2">Launched SharePoint repository with pilot content</li>
+<li class="mb-2">Conducted live training sessions (3 sessions across time zones)</li>
+<li class="mb-2">Created "Knowledge Base Champions" in each region for peer support</li>
+<li class="mb-2">Distributed quick reference guide for navigating repository</li>
+
+<strong class="font-semibold text-gray-900">Phase 3: Content Expansion (Weeks 15-26)</strong>
+<li class="mb-2">Systematically created remaining 40+ SOPs</li>
+<li class="mb-2">Built out template library</li>
+<li class="mb-2">Recorded training videos for complex tools</li>
+<li class="mb-2">Organized brand and legal documentation</li>
+
+<strong class="font-semibold text-gray-900">Phase 4: Onboarding Curriculum Launch (Week 27)</strong>
+<li class="mb-2">Piloted 4-week onboarding program with 2 new hires</li>
+<li class="mb-2">Gathered feedback and refined materials</li>
+<li class="mb-2">Rolled out globally as standard onboarding approach</li>
+
+<strong class="font-semibold text-gray-900">Phase 5: Ongoing Maintenance (Weeks 28+)</strong>
+<li class="mb-2">Established quarterly review schedule</li>
+<li class="mb-2">Monitored usage analytics to identify gaps</li>
+<li class="mb-2">Continuously refined based on team feedback</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Outcomes & Impact</h3>
+
+<strong class="font-semibold text-gray-900">Efficiency Gains:</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Onboarding time reduced by 50%:</strong> From 6-8 weeks to 3-4 weeks</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">95% self-service success rate:</strong> Team members could find information independently without asking colleagues</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Reduced synchronous communication dependency:</strong> Slack messages asking "how do I...?" dropped by an estimated 60%</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Faster cross-time-zone collaboration:</strong> APAC and EMEA teams could complete work without waiting for U.S. team to wake up</li>
+
+<strong class="font-semibold text-gray-900">Operational Improvements:</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Process standardization:</strong> Global alignment on core workflows (intake, legal review, asset management)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Knowledge retention:</strong> When team members departed, their expertise remained captured in documentation</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Reduced bottlenecks:</strong> No longer reliant on specific individuals as single points of knowledge</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Improved quality consistency:</strong> Templates and checklists ensured all necessary information captured</li>
+
+<strong class="font-semibold text-gray-900">Team Satisfaction:</strong>
+<li class="mb-2">Post-implementation survey: 89% of team rated knowledge base as "very helpful" or "essential"</li>
+<li class="mb-2">New hire feedback: 92% said onboarding curriculum made them feel prepared for the role</li>
+<li class="mb-2">Manager feedback: Noted significant reduction in time spent answering repetitive questions</li>
+
+<strong class="font-semibold text-gray-900">Scalability:</strong>
+<li class="mb-2">Structure easily accommodated new regions (added LatAm team in 2021)</li>
+<li class="mb-2">New tools integrated into documentation framework without disruption</li>
+<li class="mb-2">Repository remained organized and current 4 years post-launch with minimal maintenance</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">SAMPLE DELIVERABLES</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Before/After: Information Access</h3>
+
+<strong class="font-semibold text-gray-900">Before:</strong>
+<li class="mb-2">Team member needs to complete legal review routing</li>
+<li class="mb-2">No documentation exists</li>
+<li class="mb-2">Sends Slack message: "Hey, does anyone know how to route something for legal review?"</li>
+<li class="mb-2">Waits for response (could be hours if asker is in different time zone)</li>
+<li class="mb-2">Receives verbal explanation or forwarded email with partial instructions</li>
+<li class="mb-2">Piece together process from fragmented information</li>
+
+<strong class="font-semibold text-gray-900">After:</strong>
+<li class="mb-2">Team member needs to complete legal review routing</li>
+<li class="mb-2">Searches knowledge base: "legal review"</li>
+<li class="mb-2">Finds SOP: "Legal Review Routing Process"</li>
+<li class="mb-2">Follows step-by-step instructions with screenshots</li>
+<li class="mb-2">Completes task independently in 15 minutes</li>
+<li class="mb-2">No need to ask colleagues; no waiting for response</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Sample SOP Structure</h3>
+
+<strong class="font-semibold text-gray-900">SOP: Legal Review Routing for Creative Assets</strong>
+
+<strong class="font-semibold text-gray-900">1. Purpose & Scope</strong>
+<li class="mb-2">This SOP outlines the process for routing creative assets through Deloitte's legal review and approval workflow before public release.</li>
+<li class="mb-2">Use this process for: marketing materials, client-facing presentations, social media posts, advertisements.</li>
+
+<strong class="font-semibold text-gray-900">2. Prerequisites</strong>
+<li class="mb-2">Asset must be uploaded to Adobe Experience Manager (AEM)</li>
+<li class="mb-2">Creative brief and project details must be logged in Workfront</li>
+<li class="mb-2">Requestor must have AEM and Workfront access</li>
+
+<strong class="font-semibold text-gray-900">3. Step-by-Step Instructions</strong>
+
+<strong class="font-semibold text-gray-900">Step 1: Initiate Legal Review Request in Workfront</strong>
+<li class="mb-2">Open the project in Workfront</li>
+<li class="mb-2">Click "Tasks" tab</li>
+<li class="mb-2">Select "Request Legal Review" task</li>
+<li class="mb-2">Fill in required fields:</li>
+<p class="my-4 leading-relaxed text-gray-700">  - Asset name and AEM link</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Intended usage (web, print, social, etc.)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Target publish date</p>
+<p class="my-4 leading-relaxed text-gray-700">  - Urgency level</p>
+<li class="mb-2">Click "Submit"</li>
+
+<p class="my-4 leading-relaxed text-gray-700">[Screenshot of Workfront task form]</p>
+
+<strong class="font-semibold text-gray-900">Step 2: Tag Asset in AEM for Legal Review</strong>
+<li class="mb-2">Navigate to asset in AEM</li>
+<li class="mb-2">Update metadata field: "Review Status" → "Legal Review Pending"</li>
+<li class="mb-2">Add tag: "LegalReview_[YYYY-MM]"</li>
+<li class="mb-2">Save changes</li>
+
+<p class="my-4 leading-relaxed text-gray-700">[Screenshot of AEM metadata panel]</p>
+
+<strong class="font-semibold text-gray-900">Step 3: Notify Legal Team</strong>
+<li class="mb-2">Send email to legal-review@deloitte.com</li>
+<li class="mb-2">Subject: "Legal Review Request: [Asset Name]"</li>
+<li class="mb-2">Include: Workfront task link, AEM asset link, target publish date</li>
+<li class="mb-2">CC your manager</li>
+
+<p class="my-4 leading-relaxed text-gray-700">[Screenshot of email template]</p>
+
+<strong class="font-semibold text-gray-900">Step 4: Track Review Status</strong>
+<li class="mb-2">Monitor Workfront task for updates</li>
+<li class="mb-2">Legal team SLA: 5 business days standard, 2 business days expedited</li>
+<li class="mb-2">If no response within SLA, escalate to [Manager Name]</li>
+
+<strong class="font-semibold text-gray-900">Step 5: Address Legal Feedback</strong>
+<li class="mb-2">Legal team will comment directly in Workfront task</li>
+<li class="mb-2">Make requested revisions to asset</li>
+<li class="mb-2">Upload revised version to AEM with version number incremented (v2, v3, etc.)</li>
+<li class="mb-2">Reply in Workfront task when revisions complete</li>
+
+<strong class="font-semibold text-gray-900">Step 6: Final Approval & Asset Release</strong>
+<li class="mb-2">Once legal approves, update AEM metadata: "Review Status" → "Approved"</li>
+<li class="mb-2">Mark Workfront task as complete</li>
+<li class="mb-2">Asset is now cleared for public release</li>
+
+<strong class="font-semibold text-gray-900">4. Troubleshooting</strong>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Issue</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Solution</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Legal team hasn't responded within SLA</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Check spam folder for emails; if still no response, escalate to [Manager]</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Asset requires expedited review</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Mark "Urgency: High" in Workfront; follow up with phone call to legal team</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Unclear legal feedback</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Schedule 15-min call with legal reviewer to clarify; document outcome in Workfront</td></tr>
+</tbody></table></div>
+
+<strong class="font-semibold text-gray-900">5. Related Documentation</strong>
+<li class="mb-2">SOP: AEM Asset Upload Standards</li>
+<li class="mb-2">SOP: Workfront Task Management</li>
+<li class="mb-2">Template: Legal Review Email</li>
+
+<strong class="font-semibold text-gray-900">6. Contacts & Support</strong>
+<li class="mb-2">Legal Review Team: legal-review@deloitte.com</li>
+<li class="mb-2">Creative Operations Specialist: [Name]</li>
+<li class="mb-2">Slack channel for questions: #creative-ops-help</li>
+
+<strong class="font-semibold text-gray-900">Version History:</strong>
+<li class="mb-2">v1.0 (2020-03): Initial creation</li>
+<li class="mb-2">v2.0 (2021-06): Updated to reflect new AEM metadata fields</li>
+<li class="mb-2">v2.1 (2022-01): Added expedited review process</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Onboarding Checklist Sample</h3>
+
+<strong class="font-semibold text-gray-900">Week 1: Orientation & Access</strong>
+
+<strong class="font-semibold text-gray-900">Monday:</strong>
+<li class="mb-2">[ ] IT setup complete (laptop, email, software)</li>
+<li class="mb-2">[ ] Attend team welcome meeting</li>
+<li class="mb-2">[ ] Review organizational chart and team roles</li>
+<li class="mb-2">[ ] Meet with manager for role overview</li>
+
+<strong class="font-semibold text-gray-900">Tuesday:</strong>
+<li class="mb-2">[ ] Complete SharePoint knowledge base orientation</li>
+<li class="mb-2">[ ] Watch intro video: "Navigating the Knowledge Base"</li>
+<li class="mb-2">[ ] Review: Creative Operations Overview Document</li>
+<li class="mb-2">[ ] Set up Slack and join relevant channels</li>
+
+<strong class="font-semibold text-gray-900">Wednesday:</strong>
+<li class="mb-2">[ ] Tool access verification:</li>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Adobe Experience Manager (AEM)</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Adobe Workfront</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] SharePoint</p>
+<p class="my-4 leading-relaxed text-gray-700">  - [ ] Microsoft Teams</p>
+<li class="mb-2">[ ] Meet onboarding buddy (assigned peer for questions)</li>
+
+<strong class="font-semibold text-gray-900">Thursday:</strong>
+<li class="mb-2">[ ] Read: Project Intake Workflow SOP (U.S. / EMEA / APAC - your region)</li>
+<li class="mb-2">[ ] Read: Creative Operations Team Structure</li>
+<li class="mb-2">[ ] Shadow onboarding buddy on live project (observation only)</li>
+
+<strong class="font-semibold text-gray-900">Friday:</strong>
+<li class="mb-2">[ ] Review: Brand Guidelines Overview</li>
+<li class="mb-2">[ ] Complete self-assessment quiz: Week 1 Knowledge Check</li>
+<li class="mb-2">[ ] Weekly check-in with manager</li>
+
+<hr class="hr-styled my-12">
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Governance Framework Excerpt</h3>
+
+<strong class="font-semibold text-gray-900">Documentation Review & Update Schedule</strong>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Content Type</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Review Frequency</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Owner</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Trigger for Ad-Hoc Review</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">SOPs</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Quarterly</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Creative Ops Specialist</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Process change, tool update, or team feedback</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Training Materials</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Semi-annually</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Creative Ops Specialist</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Platform updates or significant workflow changes</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Templates</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Annually</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Team Leads (by functional area)</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Legal/compliance changes or stakeholder request</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand Guidelines</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Annually</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand Team</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand refresh or legal requirement updates</td></tr>
+</tbody></table></div>
+
+<strong class="font-semibold text-gray-900">Quality Assurance Checklist (Pre-Publication)</strong>
+
+<p class="my-4 leading-relaxed text-gray-700">Before publishing any new documentation:</p>
+<li class="mb-2">[ ] All required sections present (purpose, prerequisites, steps, troubleshooting, contacts)</li>
+<li class="mb-2">[ ] Screenshots current and clear</li>
+<li class="mb-2">[ ] Links tested and functional</li>
+<li class="mb-2">[ ] Peer review completed by subject matter expert</li>
+<li class="mb-2">[ ] Tested by someone unfamiliar with the process</li>
+<li class="mb-2">[ ] Version number and date documented</li>
+<li class="mb-2">[ ] Saved in correct folder location</li>
+<li class="mb-2">[ ] Named according to convention</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">CONCLUSION</h2>
+
+<p class="my-4 leading-relaxed text-gray-700">Building a comprehensive documentation and knowledge-sharing infrastructure enabled Deloitte's creative operations team to scale globally while maintaining operational efficiency and service quality. By capturing institutional knowledge, standardizing processes, and creating self-service systems, the team reduced onboarding time, minimized dependency on synchronous communication, and empowered team members across all time zones to work independently.</p>
+
+<strong class="font-semibold text-gray-900">Key Success Factors:</strong>
+<li class="mb-2"><strong class="font-semibold text-gray-900">User-centered discovery:</strong> Understanding actual pain points before building solutions</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Comprehensive governance:</strong> Ensuring documentation stayed current and useful over time</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Structured onboarding:</strong> Transforming chaotic trial-by-fire into systematic training</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Cross-functional collaboration:</strong> Involving team leads as subject matter experts ensured accuracy and adoption</li>
+</ul>
+<p class="my-4 leading-relaxed text-gray-700">The knowledge infrastructure continues to support global creative operations, enabling asynchronous collaboration and sustainable growth.</p>
+
+<hr class="hr-styled my-12">
+
+<strong class="font-semibold text-gray-900">Project Owner:</strong> Creative Operations Specialist  
+<strong class="font-semibold text-gray-900">Completion Date:</strong> August 2022 (ongoing maintenance transitioned to successor)
+
+</article>
+    </main>
+    <footer class="bg-gray-800 text-white py-6 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">© 2025 Audra George</p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {{
+            mobileMenuButton.addEventListener('click', () => {{
+                mobileMenu.classList.toggle('hidden');
+            }});
+        }}
+    </script>
+</body>
+</html>

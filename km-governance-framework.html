@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Governance Framework - Audra George</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-background-warm: #FDF6E3;
+            --color-secondary-background: #F3E9DD;
+            --color-text-dark: #3A3845;
+            --color-dam-accent: #D9A445;
+            --color-km-accent: #5B8291;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--color-background-warm);
+            color: var(--color-text-dark);
+            padding-top: 80px;
+        }
+        h1, h2, h3, h4, h5, h6, .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hr-styled {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(58, 56, 69, 0), rgba(58, 56, 69, 0.5), rgba(58, 56, 69, 0));
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white/95 backdrop-blur-lg fixed w-full z-20 border-b border-gray-200 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 font-poppins tracking-wider">Audra George</a>
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-semibold tracking-wider uppercase">
+                <a href="index.html" class="text-gray-700 hover:text-gray-900 transition">All Projects</a>
+                <a href="dam-portfolio.html" class="text-gray-700 hover:text-gray-900 transition">DAM Portfolio</a>
+                <a href="km-portfolio.html" class="text-gray-700 hover:text-gray-900 transition">KM Portfolio</a>
+                <a href="index.html#contact" class="bg-gray-800 text-white py-2 px-5 rounded-sm hover:bg-black transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 border-t border-gray-200">
+            <a href="dam-portfolio.html" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">DAM Portfolio</a>
+            <a href="km-portfolio.html" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">KM Portfolio</a>
+            <a href="index.html#contact" class="block text-center py-2 px-4 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="mb-8">
+            <a href="km-portfolio.html" class="text-gray-600 hover:text-gray-900 transition inline-flex items-center">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to KM Portfolio
+            </a>
+        </div>
+<article class="prose prose-lg max-w-none">
+<h1 class="text-5xl font-bold font-poppins text-gray-800 mb-8 leading-tight">Documentation & Training Materials Governance Framework</h1>
+
+<strong class="font-semibold text-gray-900">Deloitte Global Creative Operations</strong>  
+<strong class="font-semibold text-gray-900">Implementation Period: 2018–2022</strong>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Executive Summary</h2>
+
+<p class="my-4 leading-relaxed text-gray-700">This governance framework established standards for managing documentation, standard operating procedures (SOPs), and training materials across Deloitte's global creative operations team. As the team expanded from U.S./Canada operations to a 40+ member global organization spanning multiple time zones, a centralized system for documentation management became critical to maintaining consistency, enabling asynchronous collaboration, and reducing onboarding time.</p>
+
+<p class="my-4 leading-relaxed text-gray-700">The framework reduced new team member onboarding from 6-8 weeks to 3-4 weeks and enabled 95% of the team to locate information independently without requiring real-time assistance.</p>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Purpose & Scope</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Purpose</h3>
+<p class="my-4 leading-relaxed text-gray-700">To establish clear standards for creating, organizing, maintaining, and accessing documentation and training materials that support creative operations workflows, ensuring consistency and accessibility across global teams.</p>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Scope</h3>
+<p class="my-4 leading-relaxed text-gray-700">This framework applies to:</p>
+<ul class="list-disc list-inside my-4 space-y-2"><li class="mb-2">Standard operating procedures (SOPs)</li>
+<li class="mb-2">Process documentation</li>
+<li class="mb-2">Training materials and onboarding resources</li>
+<li class="mb-2">Template libraries</li>
+<li class="mb-2">Brand guidelines and legal review documentation</li>
+<li class="mb-2">Workflow and project intake documentation</li>
+
+<strong class="font-semibold text-gray-900">Out of Scope:</strong> Client-facing deliverables, final creative assets, and project files (managed separately through Adobe Creative Suite and project management platforms).
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Roles & Responsibilities</h2>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Role</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Responsibilities</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Operations Specialist</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Framework ownership; documentation creation and maintenance; quality assurance; training team members on standards; quarterly audits</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Leads</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Subject matter expertise for process documentation; review and approval of documentation affecting their teams; ensuring team compliance</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Members</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Following established standards when creating documentation; flagging outdated or unclear materials; contributing to template libraries</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Global Leadership</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Strategic alignment; approval of governance changes; resource allocation for documentation initiatives</td></tr>
+</tbody></table></div>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Documentation Standards</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Required Elements for All Documentation</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">All SOPs and process documentation must include:</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Header Information</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Document title</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Version number and date</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Document owner/creator</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Last review date</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Next scheduled review date</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Purpose Statement</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Clear explanation of what the process accomplishes</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Target audience</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Step-by-Step Instructions</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Numbered steps in logical sequence</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Screenshots or visual aids where applicable</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Decision points clearly marked</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Required Resources</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Tools, templates, or access requirements</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Links to related documentation</p>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Contacts & Support</strong></li>
+<p class="my-4 leading-relaxed text-gray-700">   - Who to contact for questions</p>
+<p class="my-4 leading-relaxed text-gray-700">   - Escalation path for issues</p>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Quality Standards</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Clarity:</strong> Written in plain language appropriate for the target audience</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Completeness:</strong> All steps documented; no assumed knowledge</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Accuracy:</strong> Tested and verified before publication</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Visual Consistency:</strong> Standard formatting, fonts, and structure across all documents</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">File Formats</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">SOPs and Process Documentation:</strong> Microsoft Word (.docx) or Google Docs</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Quick Reference Guides:</strong> PDF (for version control and universal access)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Training Materials:</strong> PowerPoint (.pptx) or Google Slides</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Templates:</strong> Native file format (InDesign, Photoshop, etc.) with accompanying instruction sheet</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Naming Conventions</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Standard Format</h3>
+<code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">[Category]_[Document-Type]_[Descriptive-Title]_[Version]_[Date]</code>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Examples</h3>
+<li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">BrandGuidelines_SOP_Logo-Usage-Standards_v2.1_2021-03</code></li>
+<li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">Intake_Template_Project-Request-Form_v1.0_2020-06</code></li>
+<li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">Training_Guide_AEM-Asset-Upload_v3.0_2022-01</code></li>
+<li class="mb-2"><code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">Workflow_Process-Map_Legal-Review-Routing_v1.2_2021-09</code></li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Naming Rules</h3>
+<li class="mb-2">No spaces (use hyphens for readability)</li>
+<li class="mb-2">Use title case for descriptive portions</li>
+<li class="mb-2">Version format: v[Major].[Minor] (e.g., v2.1)</li>
+<li class="mb-2">Date format: YYYY-MM</li>
+<li class="mb-2">Maximum filename length: 100 characters</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Folder Structure & Organization</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Primary Directory Structure</h3>
+
+<pre class="bg-gray-50 border border-gray-200 p-6 rounded my-6 overflow-x-auto text-sm"><code>📁 Creative Operations Documentation/
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 SOPs & Process Documentation/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Intake & Project Management/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Asset Management & DAM/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Legal & Brand Compliance/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Vendor & Procurement/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── 📁 Quality Assurance/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 Training & Onboarding/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 New Team Member Onboarding/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Tool Training (by platform)/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Process Training/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── 📁 Regional-Specific Training/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 Templates & Forms/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Project Intake Templates/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Asset Request Forms/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Review & Approval Forms/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── 📁 Reporting Templates/</p>
+<p class="my-4 leading-relaxed text-gray-700">├── 📁 Brand & Style Guidelines/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Global Brand Standards/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   ├── 📁 Regional Brand Variations/</p>
+<p class="my-4 leading-relaxed text-gray-700">│   └── 📁 Legal & Compliance Guidelines/</p>
+<p class="my-4 leading-relaxed text-gray-700">└── 📁 Archive/</p>
+<p class="my-4 leading-relaxed text-gray-700">    └── 📁 [Year]/</p>
+<p class="my-4 leading-relaxed text-gray-700">        └── 📁 [Month-Archived]/</p>
+</code></pre>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Organizational Principles</h3>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Folder depth limited to 3 levels</strong> to prevent deep nesting</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Logical grouping by function</strong> (not by team or individual)</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Separate active and archived content</strong> to maintain clean working directories</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Consistent subfolder structure</strong> across categories where applicable</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Content Lifecycle Management</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">1. Creation & Intake Process</h3>
+
+<strong class="font-semibold text-gray-900">New Documentation Request:</strong>
+<li class="mb-2">Requestor submits documentation need to Creative Operations Specialist</li>
+<li class="mb-2">Assess necessity and scope</li>
+<li class="mb-2">Identify document owner and subject matter expert</li>
+<li class="mb-2">Create document using standard template</li>
+<li class="mb-2">Draft review with stakeholders</li>
+<li class="mb-2">Finalize and publish</li>
+
+<strong class="font-semibold text-gray-900">Timeline:</strong> 1-2 weeks for standard SOPs; 3-4 weeks for complex process documentation
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">2. Review & Update Cycles</h3>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Document Type</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Review Frequency</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Trigger for Ad-Hoc Review</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">SOPs</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Quarterly</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Process change, tool update, or team feedback</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Training Materials</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Semi-annually</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Platform updates or significant workflow changes</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Templates</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Annually</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Legal/compliance changes or stakeholder request</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand Guidelines</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Annually</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Brand refresh or legal requirement updates</td></tr>
+</tbody></table></div>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">3. Archiving Protocol</h3>
+
+<strong class="font-semibold text-gray-900">When to Archive:</strong>
+<li class="mb-2">Documentation replaced by newer version</li>
+<li class="mb-2">Process no longer in use</li>
+<li class="mb-2">Tool or platform deprecated</li>
+
+<strong class="font-semibold text-gray-900">Archive Process:</strong>
+<li class="mb-2">Add "ARCHIVED" prefix to filename</li>
+<li class="mb-2">Move to Archive folder with year/month subfolders</li>
+<li class="mb-2">Update any linking documents to remove references</li>
+<li class="mb-2">Retain for 2 years before permanent deletion</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Quality Assurance</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Pre-Publication Checklist</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">Before publishing any documentation, verify:</p>
+
+<li class="mb-2">[ ] All required elements present (header, purpose, steps, contacts)</li>
+<li class="mb-2">[ ] Naming convention followed</li>
+<li class="mb-2">[ ] File saved in correct folder location</li>
+<li class="mb-2">[ ] Version number updated</li>
+<li class="mb-2">[ ] Review date and next review date documented</li>
+<li class="mb-2">[ ] Links tested and functional</li>
+<li class="mb-2">[ ] Visuals/screenshots current and clear</li>
+<li class="mb-2">[ ] Reviewed by subject matter expert</li>
+<li class="mb-2">[ ] Tested by someone unfamiliar with the process (if applicable)</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Quarterly Audit Process</h3>
+
+<strong class="font-semibold text-gray-900">Conducted by:</strong> Creative Operations Specialist  
+<strong class="font-semibold text-gray-900">Frequency:</strong> Every 3 months  
+<strong class="font-semibold text-gray-900">Scope:</strong> All active SOPs and process documentation
+
+<strong class="font-semibold text-gray-900">Audit Checklist:</strong>
+<li class="mb-2">Verify all documents reviewed within required timeframe</li>
+<li class="mb-2">Check for broken links or outdated screenshots</li>
+<li class="mb-2">Confirm folder structure adherence</li>
+<li class="mb-2">Identify redundant or overlapping documentation</li>
+<li class="mb-2">Solicit team feedback on clarity and usefulness</li>
+<li class="mb-2">Update audit log with findings and action items</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Access Controls & Permissions</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Permission Levels</h3>
+
+<div class="my-8 overflow-x-auto"><table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+<thead class="bg-gray-100"><tr><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">User Group</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Access Level</th><th class="border-b border-gray-200 px-6 py-3 text-left text-sm font-semibold text-gray-700">Permissions</th></tr></thead><tbody>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Global Creative Team</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Read/Comment</td><td class="border-b border-gray-200 px-6 py-3 text-sm">View and comment on all documentation; cannot edit</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Team Leads</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Edit (Designated Folders)</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Edit documentation within their functional area</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Creative Operations Specialist</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Full Control</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Create, edit, delete, and organize all documentation</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">Global Leadership</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Read Only</td><td class="border-b border-gray-200 px-6 py-3 text-sm">View-only access to all documentation</td></tr>
+<tr class="hover:bg-gray-50"><td class="border-b border-gray-200 px-6 py-3 text-sm"><strong class="font-semibold text-gray-900">External Vendors</strong></td><td class="border-b border-gray-200 px-6 py-3 text-sm">Restricted Read</td><td class="border-b border-gray-200 px-6 py-3 text-sm">Access only to vendor-specific guidelines and templates</td></tr>
+</tbody></table></div>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Access Management</h3>
+<li class="mb-2">Permissions reviewed quarterly and adjusted based on role changes</li>
+<li class="mb-2">New team members granted access during onboarding</li>
+<li class="mb-2">Departing team members removed within 24 hours of departure</li>
+<li class="mb-2">External vendor access granted per project and revoked upon completion</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Maintenance Schedule</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Weekly Tasks</h3>
+<li class="mb-2">Monitor feedback and questions about documentation</li>
+<li class="mb-2">Update FAQs based on recurring questions</li>
+<li class="mb-2">Address urgent documentation updates (tool changes, process updates)</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Monthly Tasks</h3>
+<li class="mb-2">Review new documentation requests</li>
+<li class="mb-2">Update high-use templates based on feedback</li>
+<li class="mb-2">Check for broken links in most-accessed documents</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Quarterly Tasks</h3>
+<li class="mb-2">Conduct full documentation audit</li>
+<li class="mb-2">Review and update folder structure as needed</li>
+<li class="mb-2">Analyze usage metrics to identify gaps or underutilized resources</li>
+<li class="mb-2">Solicit team feedback via survey</li>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Annual Tasks</h3>
+<li class="mb-2">Comprehensive governance framework review</li>
+<li class="mb-2">Update naming conventions if needed</li>
+<li class="mb-2">Archive outdated materials</li>
+<li class="mb-2">Conduct training refresher for team on documentation standards</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Appendix A: Sample SOP Table of Contents</h2>
+
+<strong class="font-semibold text-gray-900">SOP: Legal Review Routing for Creative Assets</strong>
+
+<li class="mb-2">Purpose & Scope</li>
+<li class="mb-2">When Legal Review is Required</li>
+<li class="mb-2">Roles & Responsibilities</li>
+<li class="mb-2">Step-by-Step Process</li>
+<p class="my-4 leading-relaxed text-gray-700">   - 4.1 Initiating Legal Review Request</p>
+<p class="my-4 leading-relaxed text-gray-700">   - 4.2 Routing Asset for Review</p>
+<p class="my-4 leading-relaxed text-gray-700">   - 4.3 Tracking Review Status</p>
+<p class="my-4 leading-relaxed text-gray-700">   - 4.4 Addressing Feedback</p>
+<p class="my-4 leading-relaxed text-gray-700">   - 4.5 Final Approval & Asset Release</p>
+<li class="mb-2">Required Resources & Tools</li>
+<li class="mb-2">Timeline & SLA Expectations</li>
+<li class="mb-2">Escalation Path</li>
+<li class="mb-2">Related Documentation</li>
+<li class="mb-2">Contacts & Support</li>
+<li class="mb-2">Version History</li>
+
+<hr class="hr-styled my-12">
+
+<h2 class="text-3xl font-bold font-poppins text-gray-800 mt-16 mb-6 pt-8 border-t border-gray-200">Appendix B: Governance Framework Outcomes</h2>
+
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Key Metrics (2018–2022)</h3>
+
+<li class="mb-2"><strong class="font-semibold text-gray-900">Onboarding Time Reduction:</strong> From 6-8 weeks to 3-4 weeks</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Self-Service Success Rate:</strong> 95% of team could locate information independently</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Documentation Library Growth:</strong> From 12 SOPs to 85+ documentation resources</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Review Compliance:</strong> 98% of documentation reviewed within required timeframe</li>
+<li class="mb-2"><strong class="font-semibold text-gray-900">Team Satisfaction:</strong> 4.6/5 average rating on documentation usefulness (annual survey)</li>
+</ul>
+<h3 class="text-2xl font-semibold font-poppins text-gray-700 mt-10 mb-4">Supporting Global Operations</h3>
+
+<p class="my-4 leading-relaxed text-gray-700">This governance framework enabled a creative operations team to scale from regional (U.S./Canada) to global operations across multiple time zones. By establishing clear documentation standards and self-service knowledge systems, the team reduced dependency on synchronous communication and institutional knowledge held by individuals, creating a sustainable infrastructure for continued growth.</p>
+
+<hr class="hr-styled my-12">
+
+<strong class="font-semibold text-gray-900">Document Owner:</strong> Creative Operations Specialist  
+<strong class="font-semibold text-gray-900">Last Updated:</strong> August 2022  
+<strong class="font-semibold text-gray-900">Next Review:</strong> N/A (Framework archived following role transition)
+
+</article>
+    </main>
+    <footer class="bg-gray-800 text-white py-6 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">© 2025 Audra George</p>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {{
+            mobileMenuButton.addEventListener('click', () => {{
+                mobileMenu.classList.toggle('hidden');
+            }});
+        }}
+    </script>
+</body>
+</html>
