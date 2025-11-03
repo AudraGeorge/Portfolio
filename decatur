@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Decatur | Audra's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-warm: #FDF6E3;
+            --text-dark: #3A3845;
+            --accent: #084C61; 
+            --accent-light: #EBF0F2;
+            --border-color: #E0DACE;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--bg-warm);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container-main {
+            max-width: 900px;
+            margin: 0 auto;
+            flex-grow: 1;
+            width: 100%;
+        }
+        h1, h2, h3, h4, .font-inter {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .font-playfair {
+             font-family: 'Playfair Display', serif;
+        }
+        .section-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+        .artifact-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        .artifact-container {
+            border: 1px solid var(--border-color);
+            background-color: var(--accent-light);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 4px;
+        }
+        .step {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .step:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .step-icon {
+            background-color: var(--accent-light);
+            color: var(--accent);
+            border-radius: 50%;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0; 
+        }
+        .payoff-card {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 2.5rem;
+        }
+        .payoff-card .text {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--text-dark);
+            text-align: center;
+        }
+        .artifact-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="pt-24 px-5">
+
+    <!-- NAVIGATION -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10 border-b border-gray-200/80 shadow-sm">
+        <div class="container-main mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-inter text-xl font-bold">Audra George</a>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="index.html#about" class="text-gray-600 hover:text-accent">About</a>
+                <a href="index.html#skills" class="text-gray-600 hover:text-accent">My Approach</a>
+                <a href="index.html#work" class="text-gray-600 hover:text-accent">Case Studies</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-main">
+
+        <div class="mb-8">
+            <a href="index.html#work" class="font-inter font-semibold text-sm text-accent flex items-center hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Case Studies
+            </a>
+        </div>
+        <!-- HEADER -->
+        <header class="bg-white p-8 md:p-12 border border-gray-200/80 mb-8">
+            <div class="mb-4">
+                <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">Case Study (Documentation & Governance)</p>
+                <p class="font-inter text-2xl font-bold text-accent">City of Decatur, GA</p>
+            </div>
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold italic text-gray-800 leading-tight">Governing Complex Information</h2>
+            
+            <div class="mt-12 border-t-2 border-gray-200 pt-8">
+                <h3 class="font-inter text-xl font-bold mb-3">Goal & Context</h3>
+                <p class="text-lg leading-relaxed text-gray-600">
+                    This project involved leading a team to consolidate and structure over a decade of fragmented preservation policies, legal reports, and city ordinances into a single, comprehensive **160-page manual** defining all municipal design and governance standards.
+                </p>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-card p-8 md:p-12">
+                <div class="max-w-3xl">
+                    <h3 class="font-inter text-3xl font-bold mb-4">The Problem: Systemic Governance Crisis</h3>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        The city faced a systemic governance crisis. Their rules were scattered across various sources, meaning there was no 'source of truth' for homeowners, developers, or even the Preservation Commission itself. This fragmentation led to confusion, delays, and friction in the design review process. The core challenge was transforming dense, often subjective legal and historical documentation into a single, rational, and usable knowledge base.
+                    </p>
+                </div>
+
+                <!-- Step 1: Auditing the Data & Building the System's Language -->
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div>
+                        <h3 class="text-2xl font-bold">Information Architecture and Taxonomy</h3>
+                    </div>
+                    <p class="leading-relaxed mb-4">The project began with auditing the legal and historical documentation. The core team was responsible for defining the methodology and consolidating the disparate data. This effort produced a logical **taxonomy** to classify all architectural styles and residential types (over 18 types and 10 styles), ensuring the entire 160-page manual was organized around a coherent, **findable index.**</p>
+                    
+                    <!-- TAXONOMY CHART ARTIFACT -->
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Architectural Taxonomy & Classification Proof</p>
+                        <div class="bg-white p-2 rounded-lg shadow-lg">
+                            <!-- FIXED: Pointing to the relative path on your GitHub site -->
+                            <img src="images/IMG_2532.jpg" alt="A table showing the taxonomy of architectural types and styles across different Decatur neighborhoods" class="artifact-image" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Defining the Process Workflow -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h3"/><path d="M5 2v4"/><path d="M19 6h3"/><path d-><path d="M17 2v4"/><path d="M21 14H3"/><path d="M3 10h18"/><path d="M5 14v4"/><path d="M17 14v4"/></svg></div>
+                        <h3 class="text-2xl font-bold">Process Definition and Standardization</h3>
+                    </div>
+                    <p class="leading-relaxed mb-4">A primary deliverable was transforming the complex legal workflow into a clear, multi-step process. This required defining the precise method for handling public inquiries and municipal approvals.</p>
+                    
+                    <!-- FLOWCHART ARTIFACT -->
+                    <div class="artifact-container">
+                        <p class="artifact-label text-center">Artifact: Design Review Process Flow Chart</p>
+                         <div class="bg-white p-2 rounded-lg shadow-lg">
+                             <!-- FIXED: Pointing to the relative path on your GitHub site -->
+                             <img src="images/IMG_2531.jpg" alt="A flowchart showing the city's design review process for COA and COE applications" class="artifact-image" />
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: The Payoff -->
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+                        <h3 class="text-2xl font-bold">The Payoff</h3>
+                    </div>
+                    <div class="artifact-container mt-0">
+                        <div class="payoff-card rounded-lg">
+                            <p class="text">This was the standardization of municipal knowledge. The final Design Guidelines converted a mountain of legal uncertainty into a stable, easy-to-use centralized standard that guaranteed predictable outcomes for homeowners and streamlined administrative review for the city staff.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- FINAL FOOTER -->
+    <footer class="mt-auto text-center text-gray-500/80 text-sm py-10 px-5">
+         <p class="mb-2">Based in Georgia | Open to Remote Work</p>
+         <p>&copy; 2025 Audra George</p>
+    </footer>
+
+</body>
+</html>
+

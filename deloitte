@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Deloitte | Audra's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Removed lucide.js script -->
+    <style>
+        :root {
+            --bg-warm: #FDF6E3;
+            --text-dark: #3A3845;
+            --accent: #084C61; 
+            --accent-light: #EBF0F2;
+            --border-color: #E0DACE;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--bg-warm);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container-main {
+            max-width: 900px;
+            margin: 0 auto;
+            flex-grow: 1;
+            width: 100%;
+        }
+        h1, h2, h3, h4, .font-inter {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .font-playfair {
+             font-family: 'Playfair Display', serif;
+        }
+        .section-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+        .artifact-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        .artifact-container {
+            border: 1px solid var(--border-color);
+            background-color: var(--accent-light);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .code-snippet {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+        .sop-document {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .sop-document .sop-header {
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .sop-document .sop-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .sop-document .sop-subtitle {
+            font-family: 'Lora', serif;
+            color: #777;
+        }
+        .sop-document .sop-rule {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 1.5rem;
+        }
+        .sop-document .sop-rule-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 1rem;
+            line-height: 1;
+        }
+        .step {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .step:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .step-icon {
+            background-color: var(--accent-light);
+            color: var(--accent);
+            border-radius: 50%;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0; /* Prevents icon from shrinking */
+        }
+        .payoff-card {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 2.5rem;
+        }
+        .payoff-card .text {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--text-dark);
+            text-align: center;
+        }
+        .project-hub {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            padding: 2rem;
+        }
+        .hub-header {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hub-status {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+        }
+        .status-review {
+            background-color: #FEF3C7;
+            color: #92400E;
+        }
+        .hub-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+        .hub-detail-item > span {
+            display: block;
+            color: #777;
+            font-size: 0.8rem;
+            margin-bottom: 0.25rem;
+        }
+        .hub-comments {
+            margin-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+        .hub-comment {
+            display: flex;
+            gap: 1rem;
+        }
+        .hub-comment-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .hub-comment-content {
+            flex: 1;
+        }
+        .hub-comment-meta {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .hub-comment-meta span {
+            color: #888;
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: #fff;
+        }
+        .flowchart-step {
+            background-color: var(--accent-light);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            width: 80%;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+        }
+        .flowchart-arrow {
+            color: var(--border-color);
+            margin: 0.5rem 0;
+        }
+        
+        /* Table-based Artifact Styles */
+        .artifact-table {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .artifact-table code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+        }
+        .artifact-table .example-row {
+            border-top: 2px solid var(--accent-light);
+        }
+
+    </style>
+</head>
+<body class="pt-24 px-5">
+
+     <!-- NAVIGATION -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10 border-b border-gray-200/80 shadow-sm">
+        <div class="container-main mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-inter text-xl font-bold">Audra George</a>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="index.html#about" class="text-gray-600 hover:text-accent">About</a>
+                <a href="index.html#skills" class="text-gray-600 hover:text-accent">My Approach</a>
+                <a href="index.html#work" class="text-gray-600 hover:text-accent">Case Studies</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-main">
+
+        <div class="mb-8">
+            <a href="index.html#work" class="font-inter font-semibold text-sm text-accent flex items-center hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Case Studies
+            </a>
+        </div>
+        <!-- HEADER -->
+        <header class="bg-white p-8 md:p-12 border border-gray-200/80 mb-8">
+            <div class="mb-4">
+                <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">Case Study</p>
+                <p class="font-inter text-2xl font-bold text-accent">Deloitte</p>
+            </div>
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold italic text-gray-800 leading-tight">Scaling Systems for a Global Team</h2>
+            
+            <div class="mt-12 grid md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-1">
+                     <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mr-4 flex-shrink-0"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        <div>
+                           <p class="font-inter text-3xl font-bold text-accent">40+</p>
+                           <p class="font-inter font-semibold text-gray-700">Team Members</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 border-t-2 md:border-t-0 md:border-l-2 border-gray-200 pt-6 md:pt-0 md:pl-8">
+                    <h3 class="font-inter text-xl font-bold mb-3">The Problem</h3>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        The challenge was to merge a small, fragmented US and Canadian shared services group into a newly-formed global operation designed to support the entire firm.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-600 mt-4">
+                        The existing systems were built for a co-located staff and were already straining. They completely lacked the shared standards, asynchronous workflows, and global taxonomies needed for a distributed organization of this scale to operate as a single, efficient unit.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-card p-8 md:p-12">
+                <div class="max-w-3xl">
+                    <h3 class="font-inter text-3xl font-bold mb-4">The Solution & My Work</h3>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        I architected the foundational information systems needed to support the global expansion, enabling colleagues to work efficiently across multiple continents.
+                    </p>
+                </div>
+
+                <!-- Step 1: Information Architecture -->
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M14 10H3v11h11v-3"/><path d="M10 10v.01"/></svg></div>
+                        <h3 class="text-2xl font-bold">Global Information Architecture</h3>
+                    </div>
+                    <p class="leading-relaxed mb-4">I expanded the existing file structures to support global operations, implementing clear naming conventions that included regional identifiers to ensure assets were compliant and easily discoverable by local teams.</p>
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Scaled File Naming Convention</p>
+                         <div class="artifact-table">
+                            <table class="w-full text-sm">
+                                <thead class="bg-gray-800 text-white">
+                                    <tr>
+                                        <th class="p-3 text-left font-semibold tracking-wider">Component</th>
+                                        <th class="p-3 text-left font-semibold tracking-wider">Example</th>
+                                        <th class="p-3 text-left font-semibold tracking-wider">Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="bg-white">
+                                        <td class="p-3 font-semibold"><code>[YYYY-MM-DD]</code></td>
+                                        <td class="p-3"><code>2022-08-01</code></td>
+                                        <td class="p-3">Date of creation/publication</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="p-3 font-semibold"><code>[Region]</code></td>
+                                        <td class="p-3"><code>EMEA</code></td>
+                                        <td class="p-3">Global region identifier (EMEA, APAC, UK)</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="p-3 font-semibold"><code>[Campaign]</code></td>
+                                        <!-- UPDATED CAMPAIGN NAME -->
+                                        <td class="p-3"><code>Q3_Outlook</code></td>
+                                        <td class="p-3">Project or campaign name</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="p-3 font-semibold"><code>[AssetType]</code></td>
+                                        <td class="p-3"><code>Email</code></td>
+                                        <td class="p-3">Specific asset type (Email, Banner, etc)</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="p-3 font-semibold"><code>[v#]</code></td>
+                                        <td class="p-3"><code>v2</code></td>
+                                        <td class="p-3">Version control</td>
+                                    </tr>
+                                    <tr class="bg-gray-800 text-white example-row">
+                                        <!-- UPDATED CAMPAIGN NAME -->
+                                        <td class="p-3 font-semibold text-center" colspan="3">Full Example: <code>2022-08-01_EMEA_Q3_Outlook_Email_v2.psd</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Taxonomy -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></div>
+                        <h3 class="text-2xl font-bold">Globally-Aware Taxonomy</h3>
+                    </div>
+                    <p class="leading-relaxed mb-4">I established new metadata standards and classification systems that were globally consistent but allowed for regional flexibility. This ensures assets were searchable across the entire organization while still meeting local needs.</p>
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Global Metadata Schema</p>
+                        <div class="bg-white shadow-sm overflow-hidden"><table class="w-full text-sm"><thead class="bg-gray-800 text-white"><tr><th class="p-3 text-left font-semibold tracking-wider">Field Name</th><th class="p-3 text-left font-semibold tracking-wider">Field Type</th><th class="p-3 text-left font-semibold tracking-wider">Controlled Values / Description</th></tr></thead><tbody class="divide-y divide-gray-200"><tr class="bg-white"><td class="p-3 font-semibold">Region</td><td class="p-3">Dropdown (Multi-select)</td><td class="p-3"><code class="text-xs">Global, UK, EMEA, APAC, LATAM</code></td></tr><tr class="bg-gray-50"><td class="p-3 font-semibold">Language</td><td class="p-3">Dropdown</td><td class="p-3"><code class="text-xs">EN-US, EN-GB, FR, ES, JP</code></td></tr><tr class="bg-white"><td class="p-3 font-semibold">Asset_Status</td><td class="p-3">Dropdown</td><td class="p-3">Global standard: <code class="text-xs">WIP, Review, Approved</code></td></tr><tr class="bg-gray-50"><td class="p-3 font-semibold">Legal_Compliance</td><td class="p-3">Checkbox</td><td class="p-3">Confirms asset meets local legal review requirements.</td></tr></tbody></table></div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Workflow -->
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h3"/><path d="M5 2v4"/><path d="M19 6h3"/><path d="M17 2v4"/><path d="M21 14H3"/><path d="M3 10h18"/><path d="M5 14v4"/><path d="M17 14v4"/></svg></div>
+                        <h3 class="text-2xl font-bold">Asynchronous Workflow Adoption</h3>
+                    </div>
+                    <p class="leading-relaxed mb-4">A PM tool is useless if no one updates it. My work wasn't to invent a tool, but to define the process that transformed the existing tool from a neglected ticket-tracker into the team's central project hub.</p>
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Asynchronous Communication Workflow</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-bold text-center text-sm mb-2">THE PROCESS</h4>
+                                <div class="flowchart">
+                                    <div class="flowchart-step">Coordinator Creates Project Hub Task</div>
+                                    <div class="flowchart-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                    <div class="flowchart-step">Designer Posts Updates in Hub</div>
+                                     <div class="flowchart-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                    <div class="flowchart-step">Coordinator Reviews from Hub</div>
+                                     <div class="flowchart-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                    <div class="flowchart-step">Final Asset Link Posted in Hub</div>
+                                </div>
+                            </div>
+                            <div>
+                               <h4 class="font-bold text-center text-sm mb-2">THE RESULT</h4>
+                                <div class="project-hub">
+                                    <div class="hub-header flex justify-between items-center">
+                                        <div>
+                                            <h4 class="text-lg font-bold">APAC Launch</h4>
+                                            <p class="text-xs text-gray-500">#PROJ-781</p>
+                                        </div>
+                                        <span class="hub-status status-review">In Review</span>
+                                    </div>
+                                    <div class="hub-details text-xs">
+                                        <div class="hub-detail-item"><span>Owner</span>A. George</div>
+                                        <div class="hub-detail-item"><span>Region</span>APAC</div>
+                                        <div class="hub-detail-item"><span>Designer</span>J. Smith (UK)</div>
+                                        <div class="hub-detail-item"><span>Due Date</span>2022-07-28</div>
+                                    </div>
+                                    <div class="hub-comments">
+                                        <div class="hub-comment">
+                                            <div class="hub-comment-avatar text-sm">JS</div>
+                                            <div class="hub-comment-content">
+                                                <p class="hub-comment-meta text-sm">J. Smith <span>(9:15 AM GMT)</span></p>
+                                                <p class="mt-1 text-xs">@A. George - Drafts are linked in 'Assets' tab. Ready for your review.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Governance -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div>
+                        <h3 class="text-2xl font-bold">Documented Global Standards</h3>
+                    </div>
+                    <p class="leading-relaxed mb-4">I collaborated with leadership to document and standardize these new workflows, ensuring all colleagues had a centralized, documented standard for how to work together across time zones.</p>
+                     <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Global SOP Snippet</p>
+                        <div class="sop-document"><div class="sop-header"><p class="sop-subtitle">GLOBAL STANDARD OPERATING PROCEDURE</p><h4 class="sop-title">Cross-Team Asset Handoffs</h4></div><div class="sop-rule"><div class="sop-rule-number">01</div><div><h5 class="font-bold">Project Hub is the Source of Truth</h5><p class="text-sm mt-1">All status changes, feedback, and links to assets must be logged in the official project hub task. Communication outside the hub is unofficial.</p></div></div><div class="sop-rule"><div class="sop-rule-number">02</div><div><h5 class="font-bold">Tag for Region & Language</h5><p class="text-sm mt-1">All assets uploaded to the DAM must include correct `Region` and `Language` metadata tags.</p></div></div><div class="sop-rule"><div class="sop-rule-number">03</div><div><h5 class="font-bold">Allow 24hr Review Cycle</h5><p class="text-sm mt-1">Due to global time zones, all review deadlines must allow for a minimum 24-hour turnaround.</p></div></div></div>
+                    </div>
+                </div>
+                
+                 <!-- Step 5: Payoff -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+                        <h3 class="text-2xl font-bold">The Payoff</h3>
+                    </div>
+                     <div class="artifact-container mt-0">
+                        <div class="payoff-card">
+                            <p class="text">This wasn't just a scaling exercise. It was the creation of a unified, asynchronous operating system that allowed collaborators to work effectively across the globe, eliminating regional silos and information drift.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- FINAL FOOTER -->
+    <footer class="mt-auto text-center text-gray-500/80 text-sm py-10 px-5">
+         <p class="mb-2">Based in Georgia | Open to Remote Work</p>
+         <p>&copy; 2025 Audra George</p>
+    </footer>
+    
+    <!-- No script call needed, SVGs are inline -->
+</body>
+</html>
+
+
+
+
