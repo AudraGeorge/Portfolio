@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audra George | Information Systems Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-warm: #FDF6E3;
+            --text-dark: #3A3845;
+            --accent: #084C61;
+            --accent-light: #EBF0F2;
+            --border-color: #E0DACE;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--bg-warm);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container-main {
+            max-width: 900px;
+            margin: 0 auto;
+            flex-grow: 1;
+            width: 100%;
+        }
+        h1, h2, h3, h4, .font-inter {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .font-playfair {
+             font-family: 'Playfair Display', serif;
+        }
+        .section-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+        .case-study-card {
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            background-color: #fff; 
+        }
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: var(--accent);
+        }
+        .case-study-card a {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+        }
+        .case-study-card .company {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .case-study-card .title {
+             font-family: 'Lora', serif;
+             font-style: italic;
+        }
+        .case-study-card .description {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+        .case-study-card .link-arrow {
+            transition: transform 0.3s ease;
+        }
+        .case-study-card:hover .link-arrow {
+            transform: translateX(5px);
+        }
+
+        .approach-list {
+            position: relative;
+            padding-left: 80px;
+        }
+        .approach-list::before {
+            content: '';
+            position: absolute;
+            left: 39px;
+            top: 20px;
+            bottom: 20px;
+            width: 2px;
+            background-color: var(--border-color);
+        }
+        .approach-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+         .approach-item:last-child {
+            margin-bottom: 0;
+        }
+        .approach-icon {
+            position: absolute;
+            left: -60px;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+        }
+        .approach-content h3 {
+             line-height: 40px;
+        }
+
+    </style>
+</head>
+<body class="pt-24 px-5">
+
+    <!-- NAVIGATION -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10 border-b border-gray-200/80 shadow-sm">
+        <div class="container-main mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="#" class="font-inter text-xl font-bold">Audra George</a>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="#about" class="text-gray-600 hover:text-accent">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-accent">My Approach</a>
+                <a href="#work" class="text-gray-600 hover:text-accent">Case Studies</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-main">
+        <!-- HERO SECTION -->
+        <section id="hero" class="bg-white p-8 md:p-12 border border-gray-200/80 mb-8">
+             <h1 class="font-playfair text-5xl md:text-7xl font-bold italic text-gray-800 leading-tight text-center mb-6">Information, Intuitively Organized.</h1>
+             <p class="text-center text-lg text-gray-600 max-w-2xl mx-auto">I build the systems that make information findable—turning chaotic DAMs, scattered knowledge bases, and broken workflows into structured, sustainable operations.</p>
+        </section>
+
+        <main>
+            <!-- ABOUT SECTION -->
+            <section id="about" class="section-card p-8 md:p-12">
+                 <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-start">
+                    <div class="md:col-span-2">
+                        <h2 class="font-inter text-3xl font-bold mb-4">About Me</h2>
+                        <div class="space-y-4 text-base text-gray-700 leading-relaxed">
+                             <p>
+                                I've built information systems at Deloitte and Orvis, managing everything from global digital asset libraries to enterprise-wide knowledge bases. My work focuses on the infrastructure no one thinks about until it breaks: taxonomy, metadata, workflow documentation, and governance standards.
+                            </p>
+                            <p>
+                                My background combines hands-on corporate DAM experience with formal training in information organization (M.A. Historic Preservation—essentially library science applied to objects and history). I specialize in taking systems that have collapsed under their own weight and rebuilding them to be findable, usable, and sustainable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-accent-light/50 p-6 border border-gray-200/80">
+                        <h3 class="font-inter text-lg font-semibold text-gray-800 mb-4">Core Competencies</h3>
+                        <ul class="space-y-2 text-sm text-gray-800">
+                            <li class="flex items-start"><span class="text-accent mr-2">&#8227;</span> Digital Asset Management (DAM)</li>
+                            <li class="flex items-start"><span class="text-accent mr-2">&#8227;</span> Knowledge Management</li>
+                            <li class="flex items-start"><span class="text-accent mr-2">&#8227;</span> Taxonomy & Metadata Design</li>
+                            <li class="flex items-start"><span class="text-accent mr-2">&#8227;</span> Information Architecture</li>
+                            <li class="flex items-start"><span class="text-accent mr-2">&#8227;</span> Workflow & Process Design</li>
+                            <li class="flex items-start"><span class="text-accent mr-2">&#8227;</span> Governance & Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- MY APPROACH SECTION -->
+            <section id="skills" class="section-card p-8 md:p-12">
+                <div class="max-w-3xl mb-12 text-center mx-auto">
+                    <h2 class="font-inter text-3xl font-bold mb-4">My Approach</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        Information systems fail when they lack structure, standards, or documentation. My work is building the missing infrastructure.
+                    </p>
+                </div>
+                
+                <div class="approach-list">
+                    <!-- Skill 1 -->
+                    <div class="approach-item">
+                        <div class="approach-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                        </div>
+                        <div class="approach-content">
+                            <h3 class="text-xl font-bold mb-1">Taxonomy & Metadata</h3>
+                            <p class="leading-relaxed text-gray-700">The fix isn't better folders—it's metadata. I build controlled vocabularies and classification systems that make assets searchable and filterable instead of guessable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="approach-item">
+                        <div class="approach-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M14 10H3v11h11v-3"/><path d="M10 10v.01"/></svg>
+                        </div>
+                        <div class="approach-content">
+                             <h3 class="text-xl font-bold mb-1">Information Architecture</h3>
+                            <p class="leading-relaxed text-gray-700">When the structure makes no sense, I rebuild it. Clear hierarchies, logical groupings, and consistent naming conventions—so people can find things without needing a map.</p>
+                        </div>
+                    </div>
+
+                     <!-- Skill 3 -->
+                    <div class="approach-item">
+                         <div class="approach-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h3"/><path d="M5 2v4"/><path d="M19 6h3"/><path d="M17 2v4"/><path d="M21 14H3"/><path d="M3 10h18"/><path d="M5 14v4"/><path d="M17 14v4"/></svg>
+                        </div>
+                        <div class="approach-content">
+                           <h3 class="text-xl font-bold mb-1">Workflow & Process</h3>
+                           <p class="leading-relaxed text-gray-700">Vague email requests and hallway conversations don't scale. I design intake forms, project hubs, and standardized handoff processes that turn chaos into trackable work.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                     <div class="approach-item">
+                         <div class="approach-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                        </div>
+                        <div class="approach-content">
+                            <h3 class="text-xl font-bold mb-1">Governance & Standards</h3>
+                            <p class="leading-relaxed text-gray-700">Systems collapse without documentation. I write the SOPs, style guides, and standards that keep things consistent—especially when team members change or scale increases.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 5 -->
+                     <div class="approach-item">
+                         <div class="approach-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <div class="approach-content">
+                            <h3 class="text-xl font-bold mb-1">Search & Discoverability</h3>
+                            <p class="leading-relaxed text-gray-700">This is the proof it works. When taxonomy, structure, and metadata are done right, people can actually find what they need. Faster searches, fewer duplicates, less time wasted.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CASE STUDIES SECTION -->
+            <section id="work" class="p-8 md:p-12">
+                <h2 class="font-inter text-3xl font-bold mb-8 text-center">Case Studies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Orvis Card -->
+                    <div class="case-study-card">
+                        <a href="orvis.html">
+                            <p class="company">Orvis</p>
+                            <p class="title text-xl mt-2 mb-4">Resurrecting a Legacy DAM</p>
+                            <p class="text-sm text-gray-600 description">Audited 10,000+ assets, rebuilt the taxonomy and file structure, and documented standards to make it sustainable.</p>
+                            <div class="font-inter font-semibold text-sm text-accent flex items-center">
+                                View Case Study <span class="link-arrow ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Deloitte Card -->
+                    <div class="case-study-card">
+                        <a href="deloitte.html">
+                             <p class="company">Deloitte</p>
+                            <p class="title text-xl mt-2 mb-4">Scaling Systems for a Global Team</p>
+                            <p class="text-sm text-gray-600 description">Built the information architecture, workflows, and governance needed to scale from a co-located team to 40+ people across four continents.</p>
+                             <div class="font-inter font-semibold text-sm text-accent flex items-center">
+                                View Case Study <span class="link-arrow ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Decatur Card -->
+                    <div class="case-study-card">
+                        <a href="decatur.html">
+                             <p class="company">City of Decatur, GA</p>
+                            <p class="title text-xl mt-2 mb-4">Architecting a City's Preservation Standards</p>
+                            <p class="text-sm text-gray-600 description">Consolidated 10+ years of fragmented city ordinances into a 160-page governance manual with a unified taxonomy and process flowcharts.</p>
+                             <div class="font-inter font-semibold text-sm text-accent flex items-center">
+                                View Case Study <span class="link-arrow ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="mt-auto text-center text-gray-500/80 text-sm py-10 px-5">
+             <p class="mb-2">Based in Georgia | Open to Remote Work</p>
+             <p>&copy; 2025 Audra George</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

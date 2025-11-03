@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Orvis | Audra's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-warm: #FDF6E3;
+            --text-dark: #3A3845;
+            --accent: #084C61;
+            --accent-light: #EBF0F2;
+            --border-color: #E0DACE;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--bg-warm);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container-main {
+            max-width: 900px;
+            margin: 0 auto;
+            flex-grow: 1;
+            width: 100%;
+        }
+        h1, h2, h3, h4, .font-inter {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .font-playfair {
+             font-family: 'Playfair Display', serif;
+        }
+        .section-card {
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+        .artifact-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        .artifact-container {
+            border: 1px solid var(--border-color);
+            background-color: var(--accent-light);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 4px;
+        }
+        .challenge-box {
+            background-color: #FFF9E6;
+            border-left: 4px solid #F4A261;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .challenge-box h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #D07A3E;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        .code-snippet {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+        .form-mockup {
+            background-color: #fff;
+            padding: 2rem;
+        }
+        .form-mockup label {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .form-mockup input, .form-mockup select {
+            width: 100%;
+            border: 1px solid var(--border-color);
+            background-color: #fff;
+            padding: 0.75rem;
+            border-radius: 2px;
+            margin-bottom: 1.5rem;
+        }
+        .form-mockup button {
+            background-color: var(--accent);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .form-mockup button:hover {
+            background-color: var(--text-dark);
+        }
+        .sop-document {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .sop-document .sop-header {
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .sop-document .sop-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .sop-document .sop-subtitle {
+            font-family: 'Lora', serif;
+            color: #777;
+        }
+        .sop-document .sop-rule {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 1.5rem;
+        }
+        .sop-document .sop-rule-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 1rem;
+            line-height: 1;
+        }
+
+        .step {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .step:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .step-icon {
+            background-color: var(--accent-light);
+            color: var(--accent);
+            border-radius: 50%;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .payoff-card {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 2.5rem;
+            text-align: center;
+        }
+        .payoff-card .text {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--text-dark);
+        }
+        
+        .artifact-comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        @media (min-width: 768px) {
+            .artifact-comparison-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .artifact-window {
+            background: #ffffff;
+            border: 1px solid #d0d0d0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .artifact-title-bar {
+            background: #e8e8e8;
+            padding: 12px 16px;
+            border-bottom: 1px solid #d0d0d0;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .artifact-title-bar::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #ff5f57;
+            border-radius: 50%;
+            box-shadow: 18px 0 0 #ffbd2e, 36px 0 0 #28ca42;
+        }
+        .artifact-title-bar.before { background: #ffe8e8; }
+        .artifact-title-bar.after { background: #e8f5e9; }
+        
+        .artifact-content {
+            height: 320px;
+            overflow-y: auto;
+            display: flex;
+        }
+        .artifact-column {
+            border-right: 1px solid #e0e0e0;
+            overflow-y: auto;
+            min-width: 150px; 
+            flex: 1;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .artifact-column:last-child { border-right: none; }
+        
+        .artifact-file-item {
+            padding: 8px 12px;
+            border-bottom: 1px solid #f5f5f5;
+            cursor: pointer;
+            transition: background 0.1s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+            color: #333;
+        }
+        .artifact-folder-item {
+            padding: 8px 12px;
+            border-bottom: 1px solid #f5f5f5;
+            cursor: pointer;
+            transition: background 0.1s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .artifact-folder-item.selected {
+            background: #0066cc;
+            color: white !important;
+            font-weight: 700;
+        }
+        .artifact-file-item.selected {
+            background: #0066cc;
+            color: white !important;
+            font-weight: 600;
+        }
+        .artifact-file-item:not(.artifact-folder-item):hover {
+            background: #f5f5f5;
+        }
+        .artifact-folder-item:not(.artifact-folder-item.selected):hover {
+            background: #f5f5f5;
+        }
+        
+        .artifact-file-item::before {
+            content: '📄';
+            margin-right: 6px; 
+            font-size: 14px;
+        }
+        .artifact-folder-item::before {
+            content: '📁';
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="pt-24 px-5">
+
+    <!-- NAVIGATION -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-10 border-b border-gray-200/80 shadow-sm">
+        <div class="container-main mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-inter text-xl font-bold">Audra George</a>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="index.html#about" class="text-gray-600 hover:text-accent">About</a>
+                <a href="index.html#skills" class="text-gray-600 hover:text-accent">My Approach</a>
+                <a href="index.html#work" class="text-gray-600 hover:text-accent">Case Studies</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-main">
+        <div class="mb-8">
+            <a href="index.html#work" class="font-inter font-semibold text-sm text-accent flex items-center hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Case Studies
+            </a>
+        </div>
+
+        <!-- HEADER -->
+        <header class="bg-white p-8 md:p-12 border border-gray-200/80 mb-8">
+            <div class="mb-4">
+                <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">Case Study (DAM Remediation)</p>
+                <p class="font-inter text-2xl font-bold text-accent">Orvis</p>
+            </div>
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold italic text-gray-800 leading-tight">Resurrecting a Legacy DAM</h2>
+            <div class="mt-12 grid md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-1">
+                    <p class="font-inter text-6xl md:text-7xl font-bold text-accent">15%</p>
+                    <p class="font-inter font-semibold text-gray-700">Faster Asset Retrieval</p>
+                </div>
+                <div class="md:col-span-2 border-t-2 md:border-t-0 md:border-l-2 border-gray-200 pt-6 md:pt-0 md:pl-8">
+                    <h3 class="font-inter text-xl font-bold mb-3">The Problem</h3>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        The company's DAM system was set up years ago and then abandoned—no governance, no standards, no one responsible for upkeep. Over time, it became a digital junk drawer where assets went to die.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-600 mt-4">
+                        Teams spent hours searching for files that might not exist, or recreating assets that did exist but couldn't be found. The constant friction was burning people out.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-card p-8 md:p-12">
+                <div class="max-w-3xl">
+                    <h3 class="font-inter text-3xl font-bold mb-4">The Solution & My Work</h3>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        I rebuilt the system from the ground up: audited 10,000+ assets, established information architecture and taxonomy standards, redesigned intake workflows, and documented everything so it would stay functional.
+                    </p>
+                </div>
+
+                <!-- Step 1: Audit -->
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M14 10H3v11h11v-3"/><path d="M10 10v.01"/></svg></div>
+                        <h3 class="text-2xl font-bold">Information Architecture & Audit</h3>
+                    </div>
+
+                    <p class="leading-relaxed mb-4">
+                        The first step was diagnosing the damage. I audited the entire AEM library—10,000+ assets with inconsistent naming, duplicates, and no discernible structure.
+                    </p>
+
+                    <div class="challenge-box">
+                        <h4>The Challenge</h4>
+                        <p class="leading-relaxed text-gray-700">
+                            Files were named whatever the uploader felt like that day: "Final_FINAL_v2.jpg," "Copy of H4_Ad.jpg," "random_stuff_001.mov." Searching for anything meant wading through dozens of near-identical filenames. No one knew which version was approved or where the original lived.
+                        </p>
+                    </div>
+
+                    <p class="leading-relaxed mb-4">
+                        I removed duplicates, standardized file names with date-product-version conventions, and rebuilt the folder structure around product lines and asset types.
+                    </p>
+
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Before & After File Structure</p>
+                        
+                        <div class="artifact-comparison-grid">
+                            <!-- BEFORE Window -->
+                            <div class="artifact-window before">
+                                <div class="artifact-title-bar before">BEFORE (The Junk Drawer)</div>
+                                <div class="artifact-content artifact-column-view">
+                                    <div class="artifact-column">
+                                        <div class="artifact-folder-item">STUFF TO SORT</div>
+                                        <div class="artifact-folder-item selected">H4 stuff FINAL</div>
+                                        <div class="artifact-folder-item">old files backup</div>
+                                        <div class="artifact-folder-item">random</div>
+                                        <div class="artifact-folder-item">misc 2024</div>
+                                    </div>
+                                    <div class="artifact-column">
+                                        <div class="artifact-file-item"><span>Final_H4_Rod_Ad.jpg</span></div>
+                                        <div class="artifact-file-item"><span>H4_promo_video_DRAFT.mov</span></div>
+                                        <div class="artifact-file-item"><span>Copy of Final_H4_Rod_Ad.jpg</span></div>
+                                        <div class="artifact-file-item"><span>h4_product_shot_1.jpg</span></div>
+                                        <div class="artifact-file-item"><span>H4_Rod_Ad_v2.jpg</span></div>
+                                        <div class="artifact-file-item"><span>h4_video_FINAL_FINAL.mov</span></div>
+                                        <div class="artifact-file-item"><span>Copy of h4_product_shot_1.jpg</span></div>
+                                        <div class="artifact-file-item"><span>helios4_detail_photo.jpg</span></div>
+                                        <div class="artifact-file-item"><span>H4_Ad_REVISED.jpg</span></div>
+                                        <div class="artifact-file-item"><span>video_export_h4_001.mov</span></div>
+                                        <div class="artifact-file-item"><span>Final_H4_Rod_Ad_FINAL.jpg</span></div>
+                                        <div class="artifact-file-item"><span>h4_notes.txt</span></div>
+                                        <div class="artifact-file-item"><span>H4_tech_specs.pdf</span></div>
+                                        <div class="artifact-file-item"><span>Copy (2) of Final_H4_Rod_Ad.jpg</span></div>
+                                        <div class="artifact-file-item"><span>h4_lifestyle_001.jpg</span></div>
+                                        <div class="artifact-file-item"><span>helios_4_raw_footage.mov</span></div>
+                                        <div class="artifact-file-item"><span>h4_detail_2.jpg</span></div>
+                                        <div class="artifact-file-item"><span>H4_promo_draft_v1.mov</span></div>
+                                        <div class="artifact-file-item"><span>final_final_h4_ad.jpg</span></div>
+                                        <div class="artifact-file-item"><span>helios4_product_angle2.jpg</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AFTER Window -->
+                            <div class="artifact-window after">
+                                <div class="artifact-title-bar after">AFTER (The Organized System)</div>
+                                <div class="artifact-content artifact-column-view">
+                                    <div class="artifact-column">
+                                        <div class="artifact-folder-item selected">Helios_H4_Rod_SKU-8945</div>
+                                    </div>
+
+                                    <div class="artifact-column">
+                                        <div class="artifact-folder-item">Product_Photos</div>
+                                        <div class="artifact-folder-item">Lifestyle_Photos</div>
+                                        <div class="artifact-folder-item selected">Marketing_Assets</div>
+                                        <div class="artifact-folder-item">Video</div>
+                                        <div class="artifact-folder-item">Specs_Docs</div>
+                                    </div>
+
+                                    <div class="artifact-column">
+                                        <div class="artifact-file-item"><span>2024-05-10_H4_Social_Ad_v1.jpg</span></div>
+                                        <div class="artifact-file-item"><span>2024-05-10_H4_Social_Ad_v2.jpg</span></div>
+                                        <div class="artifact-file-item"><span>2024-05-15_H4_Social_Ad_Final.jpg</span></div>
+                                        <div class="artifact-file-item"><span>2024-05-12_H4_Email_Header.jpg</span></div>
+                                        <div class="artifact-file-item"><span>2024-05-18_H4_Print_Ad.jpg</span></div>
+                                        <div class="artifact-file-item"><span>2024-05-20_H4_Web_Banner.jpg</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Taxonomy -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></div>
+                        <h3 class="text-2xl font-bold">Taxonomy & Metadata Standards</h3>
+                    </div>
+
+                    <p class="leading-relaxed mb-4">
+                        Clean file names helped, but didn't solve search. I developed a metadata schema with controlled vocabularies—standardized tags for product line, asset type, and approval status—so people could filter instead of guess.
+                    </p>
+
+                    <div class="challenge-box">
+                        <h4>The Challenge</h4>
+                        <p class="leading-relaxed text-gray-700">
+                            The old system had freeform text fields. People tagged assets with whatever came to mind: "cool photo," "approved maybe?," "H4 stuff." Searches returned everything or nothing. I needed a taxonomy rigid enough to enable consistent search, but flexible enough that people would actually use it.
+                        </p>
+                    </div>
+
+                    <p class="leading-relaxed mb-4">
+                        I mapped 10,000+ assets to standardized metadata fields with dropdown menus and controlled values—no more guessing.
+                    </p>
+
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Metadata Schema</p>
+                        <div class="bg-white shadow-sm overflow-hidden rounded-lg"><table class="w-full text-sm"><thead class="bg-gray-800 text-white"><tr><th class="p-3 text-left font-semibold tracking-wider">Field Name</th><th class="p-3 text-left font-semibold tracking-wider">Field Type</th><th class="p-3 text-left font-semibold tracking-wider">Controlled Values</th></tr></thead><tbody class="divide-y divide-gray-200"><tr class="bg-white"><td class="p-3 font-semibold">Asset_Status</td><td class="p-3">Dropdown</td><td class="p-3"><code>WIP, In-Review, Approved, Archived</code></td></tr><tr class="bg-gray-50"><td class="p-3 font-semibold">Product_Line</td><td class="p-3">Tags</td><td class="p-3">e.g., "Helios H4", "Pro Boot"</td></tr><tr class="bg-white"><td class="p-3 font-semibold">Asset_Type</td><td class="p-3">Dropdown</td><td class="p-3">"Lifestyle Photo", "Product Shot", "Video"</td></tr><tr class="bg-gray-50"><td class="p-3 font-semibold">Rights_Expiry</td><td class="p-3">Date</td><td class="p-3">License expiration date</td></tr></tbody></table></div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Workflow -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h3"/><path d="M5 2v4"/><path d="M19 6h3"/><path d="M17 2v4"/><path d="M21 14H3"/><path d="M3 10h18"/><path d="M5 14v4"/><path d="M17 14v4"/></svg></div>
+                        <h3 class="text-2xl font-bold">Intake Workflow Redesign</h3>
+                    </div>
+
+                    <p class="leading-relaxed mb-4">
+                        The DAM could stay clean only if new assets entered correctly. The old intake system in Workfront was optional and incomplete—most people skipped it entirely and uploaded files directly, with no metadata.
+                    </p>
+
+                    <p class="leading-relaxed mb-4">
+                        I rebuilt the intake form to enforce the standards. Required fields, dropdown menus, and validation rules meant assets couldn't enter the DAM dirty.
+                    </p>
+
+                    <div class="artifact-container">
+                        <p class="artifact-label">Artifact: Redesigned Intake Form</p>
+                        <div class="form-mockup rounded-lg"><label for="asset-name">Asset Name (Use Naming Convention)</label><input type="text" id="asset-name" placeholder="e.g., 2023-05-15_HeliosH4_SocialAd_v1"><label for="product-line">Product Line(s)</label><select id="product-line"><option>Helios H4 Fly Rod</option><option>Pro Hiking Boot</option><option>Waders</option></select><label for="asset-type">Asset Type</label><select id="asset-type"><option>Social Media Graphic</option><option>Print Ad</option><option>Product Photography</option></select><div class="mt-4"><button type="button">Submit for Review</button></div></div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Governance -->
+                 <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div>
+                        <h3 class="text-2xl font-bold">Documented Governance</h3>
+                    </div>
+
+                    <p class="leading-relaxed mb-4">
+                        The original system failed because nothing was written down—it only existed in people's heads. I created SOPs for file naming, metadata tagging, and intake processes so new team members could onboard without tribal knowledge.
+                    </p>
+
+                     <div class="artifact-container">
+                        <p class="artifact-label">Artifact: SOP Snippet</p>
+                        <div class="sop-document rounded-lg"><div class="sop-header"><p class="sop-subtitle">STANDARD OPERATING PROCEDURE</p><h4 class="sop-title">File Naming Convention</h4></div><div class="sop-rule"><div class="sop-rule-number">01</div><div><h5 class="font-bold">Use the Standard Format</h5><p class="text-sm mt-1">All files must follow the <code class="text-xs bg-gray-100 p-1 rounded">YYYY-MM-DD_[Product]_[Description]_[v#]</code> format.</p></div></div><div class="sop-rule"><div class="sop-rule-number">02</div><div><h5 class="font-bold">No Spaces Allowed</h5><p class="text-sm mt-1">Use underscores (_) to separate words. Do not use spaces.</p></div></div><div class="sop-rule"><div class="sop-rule-number">03</div><div><h5 class="font-bold">Version Control is Mandatory</h5><p class="text-sm mt-1">Always update the version number (e.g., <code class="text-xs bg-gray-100 p-1 rounded">_v1, _v2</code>) when saving iterations.</p></div></div></div>
+                    </div>
+                </div>
+                
+                <!-- Payoff -->
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+                        <h3 class="text-2xl font-bold">The Payoff</h3>
+                    </div>
+                     <div class="artifact-container mt-0">
+                        <div class="payoff-card rounded-lg">
+                           <p class="text">The 15% retrieval improvement meant teams stopped wasting hours hunting for files. Duplicate asset creation dropped. The system became the trusted source of truth it was supposed to be from the start—and it stayed that way because the governance was finally documented.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- FINAL FOOTER -->
+    <footer class="mt-auto text-center text-gray-500/80 text-sm py-10 px-5">
+         <p class="mb-2">Based in Georgia | Open to Remote Work</p>
+         <p>&copy; 2025 Audra George</p>
+    </footer>
+
+</body>
+</html>
